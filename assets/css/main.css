@@ -1664,6 +1664,9 @@ section {
     right: -49%;
     transition: all .5s;
 }
+.faq_close{
+    cursor: pointer;
+}
 .r-w-0{
     right: 0px !important;
 }
