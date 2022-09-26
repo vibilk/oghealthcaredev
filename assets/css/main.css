@@ -1664,6 +1664,9 @@ section {
     right: -49%;
     transition: all .5s;
 }
+.r-w-0{
+    right: 0px !important;
+}
 .fixed_faq-container {}
 
 .fixed_faq-header h2 {
