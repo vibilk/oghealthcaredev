@@ -1464,9 +1464,9 @@
 <section class="fixed_faq">
   <div class="help_tag"><p class="m-0"><i class="far fa-question-circle mx-2"></i>Need help?</p></div>
     <div class="fixed_faq-container">
-        <div class="fixed_faq-header">
+        <div class="fixed_faq-header d-flex align-items justify-content-between">
           <h2>OG Healthcare Help</h2>
-          <div class="faq_close"></div>
+          <div class="faq_close"><i class="fas fa-times"></i></div>
         </div>
         <div class="fixed_faq-body">
             <div class="support_col">
@@ -1528,12 +1528,15 @@
   <script src="assets/js/switchmode.js"></script>
   
   <script>
-
 $(document).ready(function(){
   $(".help_tag").click(function(){
-    $(".fixed_faq").toggleClass('r-w-0');
+    $(".fixed_faq").addClass('r-w-0');
+  });
+  $(".faq_close").click(function(){
+    $(".fixed_faq").removeClass('r-w-0');
   });
 });
+
 
   </script>
 
