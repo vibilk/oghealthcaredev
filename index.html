@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css"/>
 </head>
 
 <body class="body header-fixed">
@@ -177,6 +179,7 @@
                                 </div>
                             </div> 
                         </li> -->
+               <li class="nav-item"><a class="nav-link active" href="#"> Home </a></li>
               <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
               <li class="nav-item"><a class="nav-link" href="career.html"> Careers </a></li>
               <li class="nav-item"><a class="nav-link" href="#"> Life </a></li>
@@ -187,28 +190,29 @@
             <div class="apply_btn"><a href="#">Apply</a> </div>
           </div> <!-- navbar-collapse.// -->
         </div> <!-- container-fluid.// -->
+
+        <div class="mode_switcher">
+          <a href="#" onclick="switchTheme()" class="light d-flex align-items-center">
+            <img src="assets/images/moon.png" alt="dark" class="dark_icon">
+          </a>
+          <a href="#" onclick="switchTheme()" class="dark d-flex align-items-center is_active">
+            <img src="assets/images/sun.png" alt="light">
+          </a>
+        </div>
       </nav>
     </div>
   </header>
   <!-- header section End  -->
 
-  <!-- <div class="mode_switcher">
-    <a href="#" onclick="switchTheme()" class="light d-flex align-items-center">
-      <img src="assets/images/icon/sun.png" alt="">
-    </a>
-    <a href="#" onclick="switchTheme()" class="dark d-flex align-items-center is_active">
-      <img src="assets/images/icon/moon.png" alt="">
-    </a>
-  </div> -->
+
 
 
   <!-- banner section start  -->
-  <section class="banner_section p-0">
+  <section class="banner_section p-0 position-relative">
     <div class="owl-carousel owl-theme" id="heroBanner">
-      <div class="item">
+      <!-- <div class="item">
         <div class="owl-text-overlay ">
           <h2 class="owl-title">Take Care of your Patients</h2>
-          <!-- <h4 class="owl-sm-title">Take Care of your Patients </h4> -->
           <div class="banner_btn mt-5">
             <a href="#" class="btn-fill me-4">Whitepaper</a>
             <a href="#" class="btn-light">Contact Us </a>
@@ -219,11 +223,10 @@
           <source src="assets/MedicalCenter.webm" type="video/webm">
           <source src="assets/MedicalCenter.mp4" type="video/mp4">
         </video>
-
-      </div>
+      </div> -->
 
       <div class="item">
-        <div class="owl-text-overlay ">
+        <div class="owl-text-overlay " data-aos="fade-up" >
           <h2 class="owl-title">Beyond scribing</h2>
           <!-- <h4 class="owl-sm-title">Start your healthcare career today!</h4> -->
           <div class="banner_btn mt-5">
@@ -236,7 +239,7 @@
       </div>
 
       <div class="item">
-        <div class="owl-text-overlay ">
+        <div class="owl-text-overlay " data-aos="fade-up">
           <h2 class="owl-title">Taking Pride in Being Different </h2>
           <!-- <h4 class="owl-sm-title">Start your healthcare career today!</h4> -->
           <div class="banner_btn mt-5">
@@ -255,7 +258,7 @@
 
 
   <!-- horizontal section start  -->
-  <section class="horizontal_section position-relative">
+  <!-- <section class="horizontal_section position-relative" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -302,7 +305,7 @@
         <div class="year_title">2012</div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- horizontal section end  -->
 
@@ -312,15 +315,15 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 m-auto text-center mb-5">
-          <h4 class="section_title">About OG</h4>
-          <h1 class="section_title_content mb-5">Healthcare career path</h1>
+          <h4 class="section_title" data-aos="fade-up" data-aos-duration="1000">About OG</h4>
+          <h1 class="section_title_content mb-5" data-aos="fade-up" data-aos-duration="2000">Healthcare career path</h1>
 
-          <p class="mb-4 p-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A sapiente fugiat
+          <p class="mb-4 p-content" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A sapiente fugiat
             reiciendis obcaecati
             repudiandae nobis sequi temporibus dolorem ipsa distinctio explicabo esse, nostrum odit id. Et
             exercitationem excepturi inventore neque!</p>
 
-          <p class="m-0 p-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A sapiente fugiat
+          <p class="m-0 p-content" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A sapiente fugiat
             reiciendis obcaecati
             repudiandae nobis sequi temporibus dolorem ipsa distinctio explicabo esse, nostrum odit id.</p>
         </div>
@@ -329,7 +332,7 @@
 
       <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-          <div class="about_card text-center">
+          <div class="about_card text-center" data-aos="fade-up" data-aos-duration="2000">
             <div class="about_card_img"><img src="assets/images/about_1.svg" alt="about"> </div>
             <div class="about_card_content">
               <h2>100% Ambient & Passive</h2>
@@ -341,7 +344,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-          <div class="about_card text-center">
+          <div class="about_card text-center" data-aos="fade-up" data-aos-duration="2000">
             <div class="about_card_img"><img src="assets/images/about_2.svg" alt="about"> </div>
             <div class="about_card_content">
               <h2>Compatible with Small Talk</h2>
@@ -353,7 +356,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-          <div class="about_card text-center">
+          <div class="about_card text-center" data-aos="fade-up" data-aos-duration="2000">
             <div class="about_card_img"><img src="assets/images/about_3.svg" alt="about"> </div>
             <div class="about_card_content">
               <h2>Always Getting Smarter</h2>
@@ -378,16 +381,16 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 m-auto text-center mb-5">
-          <h4 class="section_title">Services</h4>
-          <h1 class="section_title_content mb-5">Healthcare career path</h1>
+          <h4 class="section_title" data-aos="fade-up" data-aos-duration="2000">Services</h4>
+          <h1 class="section_title_content mb-5" data-aos="fade-up" data-aos-duration="2000">Healthcare career path</h1>
         </div>
       </div>
       <div class="row">
 
         <div class="col-12 col-sm-12 col-md-6 col-lg-5 mb-4">
-          <div class="service_card_body">
+          <div class="service_card_body" data-aos="fade-up" data-aos-duration="2000">
             <div class="service_card_section">
-              <div class="service_title">og turnaround times (tat)</div>
+              <div class="service_title" >og turnaround times (tat)</div>
             </div>
             <div class="service_content_part">
               <div class="load_img position-relative">
@@ -397,13 +400,13 @@
                 <div class="hour_right">24 hour 11%</div>
               </div>
 
-              <div class="text-center real-time mt-4">Synchronous Real-time<span class="d-block">81%</span> </div>
+              <div class="text-center real-time mt-4" >Synchronous Real-time<span class="d-block">81%</span> </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-12 col-md-6 col-lg-2 mb-4">
-          <div class="service_card_body">
+          <div class="service_card_body" data-aos="fade-up" data-aos-duration="2000">
             <div class="service_card_section">
               <div class="service_title">og xp</div>
             </div>
@@ -426,7 +429,7 @@
         </div>
 
         <div class="col-12 col-sm-12 col-md-6 col-lg-2 mb-4">
-          <div class="service_card_body">
+          <div class="service_card_body" data-aos="fade-up" data-aos-duration="2000">
             <div class="service_card_section">
               <div class="service_title">og ehr</div>
             </div>
@@ -465,7 +468,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-4">
-          <div class="service_card_body">
+          <div class="service_card_body" data-aos="fade-up" data-aos-duration="2000">
             <div class="service_card_section">
               <div class="service_title">og specialities</div>
             </div>
@@ -503,14 +506,14 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-sm-6 m-auto text-center mb-5">
-                <h4 class="section_title">Augmented Human Intelligence</h4>
-                <h1 class="section_title_content mb-5">Data Analytics and Process Automation</h1>
+                <h4 class="section_title" data-aos="fade-up" data-aos-duration="2000">Augmented Human Intelligence</h4>
+                <h1 class="section_title_content mb-5" data-aos="fade-up" data-aos-duration="2000">Data Analytics and Process Automation</h1>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12 col-sm-12 col-md-8 ">
-                <div class="home_testimonial-content h-100">
+                <div class="home_testimonial-content h-100" data-aos="fade-up" data-aos-duration="2000">
                   <h4>DATA ANALYTICS
                     & PROCESS AUTOMATION
                     </h4>
@@ -543,7 +546,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-12 col-md-4 ">
+              <div class="col-12 col-sm-12 col-md-4 " data-aos="fade-up" data-aos-duration="2000">
                 
                 <img src="assets/images/technology_bg-2.webp" class="w-100 h-100" alt="technology" width="100" height="500">
               </div>
@@ -560,15 +563,15 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 m-auto text-center mb-5">
-          <h4 class="section_title">Compliance</h4>
-          <h1 class="section_title_content mb-5">Healthcare career path</h1>
+          <h4 class="section_title" data-aos="fade-up" data-aos-duration="2000">Compliance</h4>
+          <h1 class="section_title_content mb-5" data-aos="fade-up" data-aos-duration="2000">Healthcare career path</h1>
         </div>
 
       </div>
 
       <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-          <div class="compliance_card">
+          <div class="compliance_card" data-aos="fade-up" data-aos-duration="2000">
             <div class="compliance_img text-center">
               <img src="assets/images/compliance_1.svg" alt="compliance">
             </div>
@@ -580,7 +583,7 @@
         </div>
 
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-          <div class="compliance_card">
+          <div class="compliance_card" data-aos="fade-up" data-aos-duration="2000">
             <div class="compliance_img text-center">
               <img src="assets/images/compliance_1.svg" alt="compliance">
             </div>
@@ -592,7 +595,7 @@
         </div>
 
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-          <div class="compliance_card">
+          <div class="compliance_card" data-aos="fade-up" data-aos-duration="2000">
             <div class="compliance_img text-center">
               <img src="assets/images/compliance_1.svg" alt="compliance">
             </div>
@@ -604,7 +607,7 @@
         </div>
 
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-          <div class="compliance_card">
+          <div class="compliance_card" data-aos="fade-up" data-aos-duration="2000">
             <div class="compliance_img text-center">
               <img src="assets/images/compliance_1.svg" alt="compliance">
             </div>
@@ -616,7 +619,7 @@
         </div>
 
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-          <div class="compliance_card">
+          <div class="compliance_card" data-aos="fade-up" data-aos-duration="2000">
             <div class="compliance_img text-center">
               <img src="assets/images/compliance_1.svg" alt="compliance">
             </div>
@@ -628,7 +631,7 @@
         </div>
 
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-          <div class="compliance_card">
+          <div class="compliance_card" data-aos="fade-up" data-aos-duration="2000">
             <div class="compliance_img text-center">
               <img src="assets/images/compliance_1.svg" alt="compliance">
             </div>
@@ -654,7 +657,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="compliance_counter-card">
+          <div class="compliance_counter-card" data-aos="fade-up" data-aos-duration="2000">
             <div class="text-center mb-5">
               <h4 class="section_title text-white">Compliance is paramount</h4>
               <h1 class="section_title_content text-white">SOC 2 Type II Certified</h1>
@@ -682,12 +685,12 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center mb-5">
-          <h4 class="section_title">In the words of others</h4>
-          <h1 class="section_title_content">100% of clients highly recommend OG</h1>
+          <h4 class="section_title" data-aos="fade-up" data-aos-duration="2000">In the words of others</h4>
+          <h1 class="section_title_content" data-aos="fade-up" data-aos-duration="2000">100% of clients highly recommend OG</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-8 ">
+        <div class="col-12 col-sm-12 col-md-8 " data-aos="fade-up" data-aos-duration="2000">
           <div class="home_testimonial-content">
             <h4>in the words of others</h4>
             <p>we're product of our achievements, but hear what others have to say about us</p>
@@ -698,7 +701,7 @@
             <p class="home_testimonial_footer mt-4"><span>100%</span> of clients highly recommend OG</p>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
+        <div class="col-12 col-sm-12 col-md-4 " data-aos="fade-up" data-aos-duration="2000">
           <div class="message_history">
             <div class="star_rating">
               <ul>
@@ -781,7 +784,7 @@
   <section class="tools_section">
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center mb-5">
+        <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
           <h4 class="section_title">OG Healthcare saves 3 hours a day.</h4>
           <h1 class="section_title_content">What will you do with these extra hours?
           </h1>
@@ -790,8 +793,8 @@
 
       <div class="row">
         <div class="col-12">
-          <div class="progress_line">
-            <div class="range-slider">
+          <div class="progress_line" data-aos="fade-up" data-aos-duration="2000">
+            <div class="range-slider" >
               <input class="range-slider__range" type="range" value="250" min="0" max="500">
               <!-- <span class="range-slider__value">0</span> -->
             </div>
@@ -800,7 +803,7 @@
       </div>
     </div>
 
-    <div class="tool_progress position-relative">
+    <div class="tool_progress position-relative" data-aos="fade-up" data-aos-duration="2000">
 
       <div class="tool_progress_content">
         <div class="progress_content_part tool-border-r">
@@ -845,7 +848,7 @@
   <section class="faq_section">
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center mb-5">
+        <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
           <h4 class="section_title">Confused? Don't be, we've been doing this for 22 years</h4>
           <h1 class="section_title_content">Frequently Asked Questions</h1>
         </div>
@@ -853,7 +856,7 @@
 
           <div class="tab_section">
             <!-- tab list  -->
-            <ul class="nav nav-tabs nav_tabs" role="tablist">
+            <ul class="nav nav-tabs nav_tabs" role="tablist" data-aos="fade-up" data-aos-duration="2000">
               <li class="nav-item">
                 <a class="nav-link active" data-bs-toggle="tab" href="#applicants">For applicants</a>
               </li>
@@ -868,7 +871,7 @@
 
 
             <!-- Tab panes -->
-            <div class="tab-content tab_content">
+            <div class="tab-content tab_content" data-aos="fade-up" data-aos-duration="2000">
               <!-- tab 1 start  -->
               <div id="applicants" class="container tab-pane active">
                 <div id="accordionOne" class="accordion_collapse">
@@ -1027,14 +1030,14 @@
   <section class="careers_section">
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center mb-5">
+        <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
           <h4 class="section_title">We work hard, but play harder</h4>
           <h1 class="section_title_content">Creating high quality long-term careers</h1>
         </div>
       </div>
     </div>
 
-    <div class="career_img_part position-relative">
+    <div class="career_img_part position-relative" data-aos="fade-up" data-aos-duration="2000">
       <img src="assets/images/careers1.webp" alt="careers" class="w-100">
       <ul class="career_img_link">
         <li>
@@ -1137,13 +1140,13 @@
   <section class="home_blog_section pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center mb-5">
+          <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
             <h4 class="section_title">We're in the news</h4>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-sm-4">
-            <div class="home_blog_card">
+            <div class="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
                <div class="home_blog_img mb-5"><img src="assets/images/blog.jpg" alt="blog" /> </div>
                <div class="home_blog_content text-center px-4">
                 <h3 class="mb-4">100% Ambient & Passive</h3>
@@ -1153,7 +1156,7 @@
 
           </div>
           <div class="col-12 col-sm-4">
-            <div class="home_blog_card">
+            <div class="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
               <div class="home_blog_img mb-5"><img src="assets/images/blog.jpg" alt="blog" /> </div>
               <div class="home_blog_content text-center px-4">
                <h3 class="mb-4">100% Ambient & Passive</h3>
@@ -1162,7 +1165,7 @@
            </div>
           </div>
           <div class="col-12 col-sm-4">
-            <div class="home_blog_card">
+            <div class="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
               <div class="home_blog_img mb-5"><img src="assets/images/blog.jpg" alt="blog" /> </div>
               <div class="home_blog_content text-center px-4">
                <h3 class="mb-4">100% Ambient & Passive</h3>
@@ -1173,14 +1176,14 @@
         </div>
 
         <div class="row mt-5">
-          <div class="col-12 text-center">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="2000">
               <a href="" class="start_btn color_green">Read our Blog</a>
           </div>
         </div>
 
         <div class="row mt-5">
             <div class="col-12 col-sm-8 m-auto">
-                <div class="subscribe_section color_green">
+                <div class="subscribe_section color_green" data-aos="fade-up" data-aos-duration="2000">
                   <h2 class="m-0">Subscribe</h2>
                   <form>
                     <div class="mb-0 w-100">
@@ -1200,7 +1203,7 @@
 
 
   <!-- contact form start  -->
-  <section class="contact_section py-0">
+  <section class="contact_section py-0" data-aos="fade-up" data-aos-duration="2000"> 
     <div class="contact_container">
       <div class="map_section">
         <iframe
@@ -1454,7 +1457,7 @@
     </div>
   </div>
 
-
+  <div class="scrollup"><i class="fas fa-arrow-up"></i></div>
 
 
 
@@ -1464,8 +1467,8 @@
 <section class="fixed_faq">
   <div class="help_tag"><p class="m-0"><i class="far fa-question-circle mx-2"></i>Need help?</p></div>
     <div class="fixed_faq-container">
-        <div class="fixed_faq-header d-flex align-items justify-content-between">
-          <h2>OG Healthcare Help</h2>
+        <div class="fixed_faq-header d-flex align-items-center justify-content-between ">
+          <h2 class="m-0 px-3">OG Healthcare Help</h2>
           <div class="faq_close"><i class="fas fa-times"></i></div>
         </div>
         <div class="fixed_faq-body">
@@ -1523,21 +1526,13 @@
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/jquery.mousewheel.min.js"></script>
   <script src="assets/js/jquery.canvasjs.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/switchmode.js"></script>
   
   <script>
-$(document).ready(function(){
-  $(".help_tag").click(function(){
-    $(".fixed_faq").addClass('r-w-0');
-  });
-  $(".faq_close").click(function(){
-    $(".fixed_faq").removeClass('r-w-0');
-  });
-});
-
-
+  AOS.init();
   </script>
 
 </body>
