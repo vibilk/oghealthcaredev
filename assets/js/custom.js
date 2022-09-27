@@ -1,15 +1,23 @@
 jQuery(document).ready(function ($) {
     $("#owl-banner").owlCarousel({
+      nav: true,
       navigation: true,
       slideSpeed: 300,
       dots: true,
       paginationSpeed: 500,
       items: 1,
       singleItem: true,
-      autoPlay: 4000
+      autoPlay: 4000,
+      navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"]
     });
+
+    
+
+   
+
   });
 
+ 
 
 
   var owl = $('#horizontal');
@@ -143,9 +151,10 @@ var videoSlider = $('#heroBanner');
 videoSlider.owlCarousel({
   loop: false,
   margin: 0,
-  nav: false,
+  nav: true,
   dots: true,
-  items: 1
+  items: 1,
+  navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"]
 });
 
 videoSlider.on('translate.owl.carousel', function (e) {
@@ -276,6 +285,67 @@ var options = {
 			]
 	}]
 };
-$("#chartContainer").CanvasJSChart(options);
+// $("#chartContainer").CanvasJSChart(options);
 
 }
+
+
+
+
+
+// page scroll top 
+$(document).ready(function() {
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) {
+          $('.scrollup').fadeIn();
+          $("#header_section").addClass("shadow_outer");
+          $(".fixed_faq").show(500);
+      } else {
+          $('.scrollup').fadeOut();
+          $("#header_section").removeClass("shadow_outer");
+          $(".fixed_faq").hide(500);
+      }
+  });
+
+  $('.scrollup').click(function() {
+      $("html, body").animate({
+          scrollTop: 0
+      }, 100);
+      return false;
+  });
+
+
+// fixed faq 
+$(".help_tag").click(function(){
+  $(".fixed_faq").addClass('r-w-0');
+});
+$(".faq_close").click(function(){
+  $(".fixed_faq").removeClass('r-w-0');
+});
+
+
+
+});
+
+
+
+$(".dark").on('click' ,function (e) {
+  e.preventDefault();
+  onclick="switchTheme()"
+  $(".body").addClass("is_dark")
+  $(".light").removeClass("is_active")
+  $(".dark").addClass("is_active")
+
+  // document.getElementById("logo_header").src = "assets/images/logo/logo_dark.png";
+  // document.getElementById("logo_footer").src = "assets/images/logo/logo_dark.png";
+});
+
+$(".light").on('click', function (e) {
+  e.preventDefault();
+  $(".body").removeClass("is_dark")
+  $(".light").addClass("is_active")
+  $(".dark").removeClass("is_active")
+
+  // document.getElementById("logo_header").src = "assets/images/logo/logo.png";
+  // document.getElementById("logo_footer").src = "assets/images/logo/logo.png";
+});
