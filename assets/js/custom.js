@@ -1,3 +1,14 @@
+ // loader 
+   
+ $(window).on('load', function() {
+  setTimeout(function () {
+    $(".loader").delay(1000).fadeOut(600);
+  }, 800);
+});
+
+
+
+
 jQuery(document).ready(function ($) {
     $("#owl-banner").owlCarousel({
       nav: true,
