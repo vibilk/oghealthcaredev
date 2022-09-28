@@ -2297,4 +2297,74 @@ color: #fff !important;
     .form_footer .social_media {
         justify-content: center !important;
     }
+    #header_section .navbar {
+        justify-content: end;
+    }
+    #main_nav{
+        padding-bottom: 10px;
+    }
+    .theme_mode {
+        margin-right: 10px;
+    }
+    .theme_mode label:after {
+        content: '';
+        top: 3.2px;
+        left: 4px;
+        width: 25px;
+        height: 25px;
+    }
+    .theme_mode::before {
+        content: "";
+        right: 6px;
+        top: 6px;
+        width: 18px;
+        height: 18px;
+        background-size: 18px;
+    }
+    .theme_mode::after {
+        content: "";
+        left: 10px;
+        top: 7px;
+        width: 18px;
+        height: 18px;
+    }
+    .theme_mode label {
+        width: 60px;
+        height: 30px;
+    }
+    .career_img_link li a {
+        font-size: 14px;
+        word-break: break-word;
+    }
+    .subscribe_section {
+        flex-direction: column;
+    }
+    .subscribe_section form {
+        row-gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service_content_part .load_img img {
+        width: 100%;
+    }
+    .hour_top {
+        top: -10px;
+        left: 0%;
+        font-size: 12px;
+    }
+    .hour_middle {
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+    }
+    .hour_right {
+        font-size: 12px;
+    }
+    .fixed_faq{
+        width: 90%;
+    }
+    .fixed_faq, .fixed_faq:hover{
+        right: -88.5%;
+    }
+   
 }
