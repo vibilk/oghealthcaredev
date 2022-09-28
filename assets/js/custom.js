@@ -308,17 +308,17 @@ var options = {
 $(document).ready(function() {
   $(window).scroll(function() {
       if ($(this).scrollTop() > 100) {
-          $('.scrollup').fadeIn();
-          $("#header_section").addClass("shadow_outer");
+          $('#progress-value').fadeIn();
+          $("#header_section").addClass("shadow_outer position-fixed");
           $(".fixed_faq").show(500);
       } else {
-          $('.scrollup').fadeOut();
-          $("#header_section").removeClass("shadow_outer");
+          $('#progress-value').fadeOut();
+          $("#header_section").removeClass("shadow_outer position-fixed");
           $(".fixed_faq").hide(500);
       }
   });
 
-  $('.scrollup').click(function() {
+  $('#progress-value').click(function() {
       $("html, body").animate({
           scrollTop: 0
       }, 100);
@@ -359,4 +359,46 @@ $(".light").on('click', function (e) {
 
   // document.getElementById("logo_header").src = "assets/images/logo/logo.png";
   // document.getElementById("logo_footer").src = "assets/images/logo/logo.png";
+});
+
+
+
+
+// scroll top progress 
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#531A94 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+
+
+
+$(document).ready(function(){
+  $(".dropdown").hover(            
+      function() {
+          $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).fadeIn("100");
+          $(this).toggleClass('open');        
+      },
+      function() {
+          $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).fadeOut("100");
+          $(this).toggleClass('open');       
+      }
+  );
 });
