@@ -13,11 +13,17 @@
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/css/aos.css">
-  <link rel="stylesheet" href="assets/css/animate.min.css"/>
+  <link rel="stylesheet" href="assets/css/animate.min.css" />
 </head>
 
 <body class="body header-fixed">
-
+  <!-- loader start -->
+  <div class="loader">
+    <div class="loader-img">
+      <img src="assets/images/loader.png" alt="loader">
+    </div>
+  </div>
+  <!-- loader end  -->
 
   <!-- header section start  -->
   <section class="top_header p-0">
@@ -179,7 +185,7 @@
                                 </div>
                             </div> 
                         </li> -->
-               <li class="nav-item"><a class="nav-link active" href="#"> Home </a></li>
+              <li class="nav-item"><a class="nav-link active" href="#"> Home </a></li>
               <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
               <li class="nav-item"><a class="nav-link" href="career.html"> Careers </a></li>
               <li class="nav-item"><a class="nav-link" href="#"> Life </a></li>
@@ -191,13 +197,16 @@
           </div> <!-- navbar-collapse.// -->
         </div> <!-- container-fluid.// -->
 
-        <div class="mode_switcher">
+        <!-- <div class="mode_switcher">
           <a href="#" onclick="switchTheme()" class="light d-flex align-items-center">
             <img src="assets/images/moon.png" alt="dark" class="dark_icon">
           </a>
           <a href="#" onclick="switchTheme()" class="dark d-flex align-items-center is_active">
             <img src="assets/images/sun.png" alt="light">
           </a>
+        </div> -->
+        <div class="theme_mode d-flex position-relative">
+          <input type="checkbox" id="switch" onclick="switchTheme()" /><label for="switch">Toggle</label>
         </div>
       </nav>
     </div>
@@ -226,7 +235,7 @@
       </div> -->
 
       <div class="item">
-        <div class="owl-text-overlay " data-aos="fade-up" >
+        <div class="owl-text-overlay " data-aos="fade-up">
           <h2 class="owl-title">Beyond scribing</h2>
           <!-- <h4 class="owl-sm-title">Start your healthcare career today!</h4> -->
           <div class="banner_btn mt-5">
@@ -318,12 +327,14 @@
           <h4 class="section_title" data-aos="fade-up" data-aos-duration="1000">About OG</h4>
           <h1 class="section_title_content mb-5" data-aos="fade-up" data-aos-duration="2000">Healthcare career path</h1>
 
-          <p class="mb-4 p-content" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A sapiente fugiat
+          <p class="mb-4 p-content" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. A sapiente fugiat
             reiciendis obcaecati
             repudiandae nobis sequi temporibus dolorem ipsa distinctio explicabo esse, nostrum odit id. Et
             exercitationem excepturi inventore neque!</p>
 
-          <p class="m-0 p-content" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A sapiente fugiat
+          <p class="m-0 p-content" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. A sapiente fugiat
             reiciendis obcaecati
             repudiandae nobis sequi temporibus dolorem ipsa distinctio explicabo esse, nostrum odit id.</p>
         </div>
@@ -390,7 +401,7 @@
         <div class="col-12 col-sm-12 col-md-6 col-lg-5 mb-4">
           <div class="service_card_body" data-aos="fade-up" data-aos-duration="2000">
             <div class="service_card_section">
-              <div class="service_title" >og turnaround times (tat)</div>
+              <div class="service_title">og turnaround times (tat)</div>
             </div>
             <div class="service_content_part">
               <div class="load_img position-relative">
@@ -400,7 +411,7 @@
                 <div class="hour_right">24 hour 11%</div>
               </div>
 
-              <div class="text-center real-time mt-4" >Synchronous Real-time<span class="d-block">81%</span> </div>
+              <div class="text-center real-time mt-4">Synchronous Real-time<span class="d-block">81%</span> </div>
             </div>
           </div>
         </div>
@@ -437,14 +448,14 @@
               <ul class="service_list">
                 <li><a href="#">AdvancedMD </a> </li>
                 <li><a href="#">AllMeds </a> </li>
-                <li><a href="#">Allscripts  </a> </li>
+                <li><a href="#">Allscripts </a> </li>
                 <li><a href="#">Alteer</a> </li>
                 <li><a href="#">AmazingCharts </a> </li>
                 <li><a href="#">Athena </a> </li>
                 <li><a href="#">CareCloud </a> </li>
                 <li><a href="#">Cerner</a> </li>
                 <li><a href="#">CHARM</a> </li>
-                <li><a href="#">CureMD  </a> </li>
+                <li><a href="#">CureMD </a> </li>
                 <li><a href="#">eClinicalWorks </a> </li>
                 <!-- <li><a href="#">Elation</a> </li>
                 <li><a href="#">e-MDs </a> </li>
@@ -502,59 +513,62 @@
 
 
   <!-- technology section start  -->
-      <section class="technology_section">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-sm-6 m-auto text-center mb-5">
-                <h4 class="section_title" data-aos="fade-up" data-aos-duration="2000">Augmented Human Intelligence</h4>
-                <h1 class="section_title_content mb-5" data-aos="fade-up" data-aos-duration="2000">Data Analytics and Process Automation</h1>
-              </div>
-            </div>
+  <section class="technology_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 m-auto text-center mb-5">
+          <h4 class="section_title" data-aos="fade-up" data-aos-duration="2000">Augmented Human Intelligence</h4>
+          <h1 class="section_title_content mb-5" data-aos="fade-up" data-aos-duration="2000">Data Analytics and Process
+            Automation</h1>
+        </div>
+      </div>
 
-            <div class="row">
-              <div class="col-12 col-sm-12 col-md-8 ">
-                <div class="home_testimonial-content h-100" data-aos="fade-up" data-aos-duration="2000">
-                  <h4>DATA ANALYTICS
-                    & PROCESS AUTOMATION
-                    </h4>
-                  <p>TECHNOLOGY ENABLED DATA DRIVEN DECISIONS & ROBOTIC PROCESS AUTOMATION (RPA), POWERING OPTIMAL PERFORMANCE</p>
-                 
-                    <div class="tech_count">
-                      <ul class="tech_count_list">
-                        <li>
-                          <a href="">824 <span class="d-block">RPA flows</span> </a>
-                        </li>
-                        <li>
-                          <a href="">35 <span class="d-block">flow writers</span> </a>
-                        </li>
-                        <li>
-                          <a href="">39 <span class="d-block">flows per month</span> </a>
-                        </li>
-                      </ul>
-                      <div class="tech_img">
-                        <img src="assets/images/technology_bg.webp" class="w-100 h-100" alt="technology"  width="100" height="200">
-                      </div>
-                      
-                    </div>
-                    <div class="tech_link_view">
-                      <ul class="d-flex justify-content-between">
-                        <li><a href="#">ROBOTIC PROCESS AUTOMATION</a> </li>
-                        <li><a href="#">21 REAL-TIME DASHBOARDS</a> </li>
-                        <li><a href="#">OGPI POWER INSIGHTS
-                          </a> </li>
-                      </ul>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 ">
+          <div class="home_testimonial-content h-100" data-aos="fade-up" data-aos-duration="2000">
+            <h4>DATA ANALYTICS
+              & PROCESS AUTOMATION
+            </h4>
+            <p>TECHNOLOGY ENABLED DATA DRIVEN DECISIONS & ROBOTIC PROCESS AUTOMATION (RPA), POWERING OPTIMAL PERFORMANCE
+            </p>
+
+            <div class="tech_count">
+              <ul class="tech_count_list">
+                <li>
+                  <a href="">824 <span class="d-block">RPA flows</span> </a>
+                </li>
+                <li>
+                  <a href="">35 <span class="d-block">flow writers</span> </a>
+                </li>
+                <li>
+                  <a href="">39 <span class="d-block">flows per month</span> </a>
+                </li>
+              </ul>
+              <div class="tech_img">
+                <img src="assets/images/technology_bg.webp" class="w-100 h-100" alt="technology" width="100"
+                  height="200">
               </div>
-              <div class="col-12 col-sm-12 col-md-4 " data-aos="fade-up" data-aos-duration="2000">
-                
-                <img src="assets/images/technology_bg-2.webp" class="w-100 h-100" alt="technology" width="100" height="500">
-              </div>
+
+            </div>
+            <div class="tech_link_view">
+              <ul class="d-flex justify-content-between">
+                <li><a href="#">ROBOTIC PROCESS AUTOMATION</a> </li>
+                <li><a href="#">21 REAL-TIME DASHBOARDS</a> </li>
+                <li><a href="#">OGPI POWER INSIGHTS
+                  </a> </li>
+              </ul>
             </div>
           </div>
-      </section>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 " data-aos="fade-up" data-aos-duration="2000">
 
- <!-- technology section end  -->
+          <img src="assets/images/technology_bg-2.webp" class="w-100 h-100" alt="technology" width="100" height="500">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- technology section end  -->
 
 
   <!-- compliance start  -->
@@ -686,7 +700,8 @@
       <div class="row">
         <div class="col-12 text-center mb-5">
           <h4 class="section_title" data-aos="fade-up" data-aos-duration="2000">In the words of others</h4>
-          <h1 class="section_title_content" data-aos="fade-up" data-aos-duration="2000">100% of clients highly recommend OG</h1>
+          <h1 class="section_title_content" data-aos="fade-up" data-aos-duration="2000">100% of clients highly recommend
+            OG</h1>
         </div>
       </div>
       <div class="row">
@@ -794,7 +809,7 @@
       <div class="row">
         <div class="col-12">
           <div class="progress_line" data-aos="fade-up" data-aos-duration="2000">
-            <div class="range-slider" >
+            <div class="range-slider">
               <input class="range-slider__range" type="range" value="250" min="0" max="500">
               <!-- <span class="range-slider__value">0</span> -->
             </div>
@@ -1055,7 +1070,7 @@
 
 
     <div class="career_img_part mt-5 position-relative">
-     
+
       <h2 class="career_img_title px-5">DIVERSITY & INCLUSIVITY</h2>
       <div class="chart_container">
         <div class="chart_cart">
@@ -1105,10 +1120,10 @@
 
         <div class="chart_cart">
           <div class="chart_col position-relative">
-             <div class="att_value"><span>9</span>pct </div>
-             <div class="att_value-sm">
-              <span>9</span>pct <br/>
-               <i>Industry average</i>
+            <div class="att_value"><span>9</span>pct </div>
+            <div class="att_value-sm">
+              <span>9</span>pct <br />
+              <i>Industry average</i>
             </div>
           </div>
           <div class="chart_title">Attrition</div>
@@ -1136,74 +1151,77 @@
 
 
 
- <!-- home blog start  -->
+  <!-- home blog start  -->
   <section class="home_blog_section pt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
-            <h4 class="section_title">We're in the news</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-4">
-            <div class="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
-               <div class="home_blog_img mb-5"><img src="assets/images/blog.jpg" alt="blog" /> </div>
-               <div class="home_blog_content text-center px-4">
-                <h3 class="mb-4">100% Ambient & Passive</h3>
-                <p>No wake words. No dictation. No summarizing. Simply talk to your patient face to face as DeepScribe listens in.</p>
-               </div>
-            </div>
-
-          </div>
-          <div class="col-12 col-sm-4">
-            <div class="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
-              <div class="home_blog_img mb-5"><img src="assets/images/blog.jpg" alt="blog" /> </div>
-              <div class="home_blog_content text-center px-4">
-               <h3 class="mb-4">100% Ambient & Passive</h3>
-               <p>No wake words. No dictation. No summarizing. Simply talk to your patient face to face as DeepScribe listens in.</p>
-              </div>
-           </div>
-          </div>
-          <div class="col-12 col-sm-4">
-            <div class="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
-              <div class="home_blog_img mb-5"><img src="assets/images/blog.jpg" alt="blog" /> </div>
-              <div class="home_blog_content text-center px-4">
-               <h3 class="mb-4">100% Ambient & Passive</h3>
-               <p>No wake words. No dictation. No summarizing. Simply talk to your patient face to face as DeepScribe listens in.</p>
-              </div>
-           </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="2000">
-              <a href="" class="start_btn color_green">Read our Blog</a>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-12 col-sm-8 m-auto">
-                <div class="subscribe_section color_green" data-aos="fade-up" data-aos-duration="2000">
-                  <h2 class="m-0">Subscribe</h2>
-                  <form>
-                    <div class="mb-0 w-100">
-                      <input type="email" class="form-control" id="email" placeholder="Enter email address" name="email">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                </div>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
+          <h4 class="section_title">We're in the news</h4>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <div class="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
+            <div class="home_blog_img mb-5"><img src="assets/images/blog.jpg" alt="blog" /> </div>
+            <div class="home_blog_content text-center px-4">
+              <h3 class="mb-4">100% Ambient & Passive</h3>
+              <p>No wake words. No dictation. No summarizing. Simply talk to your patient face to face as DeepScribe
+                listens in.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
+            <div class="home_blog_img mb-5"><img src="assets/images/blog.jpg" alt="blog" /> </div>
+            <div class="home_blog_content text-center px-4">
+              <h3 class="mb-4">100% Ambient & Passive</h3>
+              <p>No wake words. No dictation. No summarizing. Simply talk to your patient face to face as DeepScribe
+                listens in.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
+            <div class="home_blog_img mb-5"><img src="assets/images/blog.jpg" alt="blog" /> </div>
+            <div class="home_blog_content text-center px-4">
+              <h3 class="mb-4">100% Ambient & Passive</h3>
+              <p>No wake words. No dictation. No summarizing. Simply talk to your patient face to face as DeepScribe
+                listens in.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="2000">
+          <a href="" class="start_btn color_green">Read our Blog</a>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12 col-sm-8 m-auto">
+          <div class="subscribe_section color_green" data-aos="fade-up" data-aos-duration="2000">
+            <h2 class="m-0">Subscribe</h2>
+            <form>
+              <div class="mb-0 w-100">
+                <input type="email" class="form-control" id="email" placeholder="Enter email address" name="email">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 
- <!-- home blog end  -->
+  <!-- home blog end  -->
 
 
 
   <!-- contact form start  -->
-  <section class="contact_section py-0" data-aos="fade-up" data-aos-duration="2000"> 
+  <section class="contact_section py-0" data-aos="fade-up" data-aos-duration="2000">
     <div class="contact_container">
       <div class="map_section">
         <iframe
@@ -1463,61 +1481,63 @@
 
 
 
-<!-- fixed faq start  -->
-<section class="fixed_faq">
-  <div class="help_tag"><p class="m-0"><i class="far fa-question-circle mx-2"></i>Need help?</p></div>
+  <!-- fixed faq start  -->
+  <section class="fixed_faq">
+    <div class="help_tag">
+      <p class="m-0"><i class="far fa-question-circle mx-2"></i>Need help?</p>
+    </div>
     <div class="fixed_faq-container">
-        <div class="fixed_faq-header d-flex align-items-center justify-content-between ">
-          <h2 class="m-0 px-3">OG Healthcare Help</h2>
-          <div class="faq_close"><i class="fas fa-times"></i></div>
-        </div>
-        <div class="fixed_faq-body">
-            <div class="support_col">
-              <ul class="nav nav-tabs fixed_faq-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" data-bs-toggle="tab" href="#support">Support links</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#faq">FAQs</a>
-                </li>
-              </ul>
+      <div class="fixed_faq-header d-flex align-items-center justify-content-between ">
+        <h2 class="m-0 px-3">OG Healthcare Help</h2>
+        <div class="faq_close"><i class="fas fa-times"></i></div>
+      </div>
+      <div class="fixed_faq-body">
+        <div class="support_col">
+          <ul class="nav nav-tabs fixed_faq-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#support">Support links</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#faq">FAQs</a>
+            </li>
+          </ul>
 
-              <div class="tab-content">
-                <div id="support" class="container tab-pane active">
-                 <p class="support_link my-4">
-                    <a href="tel:">
-                      <span class="d-block">Telephone Numbers</span>
-                      <span class="call_link">Call OG Healthcare Customer Support</span>
-                    </a>
-                 </p>
-                </div>
-                <div id="faq" class="container tab-pane fade">
-                 
-                  <div class="my-4">
-                  <form>
-                    <select class="form-select" id="sel1" name="sellist1">
-                      <option value="" selected disabled>Select category</option>
-                      <option value="">Authentication</option>
-                      <option value="">Fraud</option>
-                      <option value="">General</option>
-                      <option value="">Logon</option>
-                      <option value="">Payments</option>
-                      <option value="">Registration and Navigation</option>
-                      <option value="">Security Device</option>
-                      <option value="">Services</option>
-                      <option value="">User Management</option>
-                    </select>
-                  </form>
-                </div>
-                </div>
+          <div class="tab-content">
+            <div id="support" class="container tab-pane active">
+              <p class="support_link my-4">
+                <a href="tel:">
+                  <span class="d-block">Telephone Numbers</span>
+                  <span class="call_link">Call OG Healthcare Customer Support</span>
+                </a>
+              </p>
+            </div>
+            <div id="faq" class="container tab-pane fade">
+
+              <div class="my-4">
+                <form>
+                  <select class="form-select" id="sel1" name="sellist1">
+                    <option value="" selected disabled>Select category</option>
+                    <option value="">Authentication</option>
+                    <option value="">Fraud</option>
+                    <option value="">General</option>
+                    <option value="">Logon</option>
+                    <option value="">Payments</option>
+                    <option value="">Registration and Navigation</option>
+                    <option value="">Security Device</option>
+                    <option value="">Services</option>
+                    <option value="">User Management</option>
+                  </select>
+                </form>
               </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
-<!-- fixed faq end  -->
+  <!-- fixed faq end  -->
 
 
 
@@ -1530,9 +1550,9 @@
   <!-- <script src="assets/js/main.js"></script> -->
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/switchmode.js"></script>
-  
+
   <script>
-  AOS.init();
+    AOS.init();
   </script>
 
 </body>
