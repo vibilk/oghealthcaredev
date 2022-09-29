@@ -389,60 +389,6 @@
   <!-- banner section end  -->
 
 
-
-  <!-- horizontal section start  -->
-  <!-- <section class="horizontal_section position-relative" data-aos="fade-up">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h4 class="section_title">Best medical scribing training program</h4>
-          <h1 class="section_title_content">Healthcare career path</h1>
-        </div>
-      </div>
-    </div>
-    <div class="owl-carousel owl-theme" id="horizontal">
-      <div class="item">
-        <div class="year_title">2001</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2002</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2003</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2004</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2005</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2006</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2007</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2008</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2009</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2010</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2011</div>
-      </div>
-      <div class="item">
-        <div class="year_title">2012</div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- horizontal section end  -->
-
-
   <!-- about section start   -->
   <section class="about_section py-5">
     <div class="container">
@@ -861,33 +807,6 @@
                     repellat, unde odit! </p>
                 </div>
               </div>
-              <div class="chat_card mb-3">
-                <label>Client</label>
-                <div class="chat_content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero omnis nobis tempora dicta aliquid
-                    ipsum, ratione atque corporis, sit inventore hic mollitia quam illo commodi facilis dignissimos
-                    repellat, unde odit! </p>
-                </div>
-              </div>
-
-              <div class="chat_card mb-3">
-                <label>Client</label>
-                <div class="chat_content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero omnis nobis tempora dicta aliquid
-                    ipsum, ratione atque corporis, sit inventore hic mollitia quam illo commodi facilis dignissimos
-                    repellat, unde odit! </p>
-                </div>
-              </div>
-
-              <div class="chat_card mb-3">
-                <label>Client</label>
-                <div class="chat_content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero omnis nobis tempora dicta aliquid
-                    ipsum, ratione atque corporis, sit inventore hic mollitia quam illo commodi facilis dignissimos
-                    repellat, unde odit! </p>
-                </div>
-              </div>
-
               <div class="chat_card mb-3">
                 <label>Client</label>
                 <div class="chat_content">
@@ -1351,7 +1270,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.895754235172!2d77.57802691473633!3d13.042307016851854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17ec36ceee1f%3A0x690c243a5b8c5f19!2sOG%20Healthcare!5e0!3m2!1sen!2sin!4v1663055368006!5m2!1sen!2sin"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade" id="googleMap"></iframe>
       </div>
       <div class="form_section pt-5">
 
@@ -1399,8 +1318,8 @@
 
               <div class="col-12 col-sm-6">
                 <div class="mb-1 mt-3">
-                  <label for="pnumber">Phone Numer:</label>
-                  <input type="number" class="form-control" id="pnumber" placeholder="Enter Phone Numer" name="pnumber">
+                  <label for="pnumber">Phone Number:</label>
+                  <input type="number" class="form-control" id="pnumber" placeholder="Enter Phone Number" name="pnumber">
                 </div>
               </div>
 
@@ -1680,6 +1599,39 @@
 
   <script>
     AOS.init();
+    window.onload = function() {
+
+var options = {
+	exportEnabled: false,
+	animationEnabled: true,
+	backgroundColor: "#F3EEF7",
+	data: [{
+		type: "pie",
+		showInLegend: false,
+		toolTipContent: "<b>{name}</b>:(#percent%)",
+		indexLabel: "{name}",
+		legendText: "{name} (#percent%)",
+		indexLabelPlacement: "inside",
+    
+		dataPoints: [
+			{ y: 65, name: "Male", color: "#511890", indexLabelFontColor: "#ffffff"},
+			{ y: 35, name: "Female",color: "#009193", indexLabelFontColor: "#ffffff"},
+			]
+	}]
+};
+$("#chartContainer").CanvasJSChart(options);
+
+}
+
+
+
+
+
+
+
+
+
+
   </script>
 
 </body>
