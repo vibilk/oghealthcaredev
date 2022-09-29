@@ -1,3 +1,5 @@
+$(window).resize(function(){location.reload();});
+ 
  // loader 
    
  $(window).on('load', function() {
@@ -71,9 +73,11 @@ jQuery(document).ready(function ($) {
 
 
   $('#employeeSlider').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 20,
-    nav: false,
+    nav: true,
+    dots:false,
+    navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
     responsive: {
       0: {
         items: 1
@@ -89,9 +93,11 @@ jQuery(document).ready(function ($) {
 
 
   $('#employeeSliderTwo').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 20,
-    nav: false,
+    nav: true,
+    dots:false,
+    navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
     responsive: {
       0: {
         items: 1
@@ -108,13 +114,13 @@ jQuery(document).ready(function ($) {
 
 
   $('#testimonialSlider').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     dots: false,
     animateOut: 'fadeOut',
     autoplay: true,
     nav: true,
-    navText: ["<div><img src='assets/images/arrow.svg' alt='arrow'/> </div>", "<div><img src='assets/images/arrow.svg' alt='arrow'/> </div>"],
+    navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
     responsive: {
       0: {
         items: 1,
@@ -161,7 +167,11 @@ jQuery(document).ready(function ($) {
 var videoSlider = $('#heroBanner');
 videoSlider.owlCarousel({
   loop: false,
+  rewind: true,
   margin: 0,
+  autoplay:true,
+  autoplayTimeout:3000,
+  autoplayHoverPause:false,
   nav: true,
   dots: true,
   items: 1,
@@ -276,29 +286,7 @@ rangeSlider();
 
 
 
-window.onload = function() {
 
-var options = {
-	exportEnabled: false,
-	animationEnabled: true,
-	backgroundColor: "#F3EEF7",
-	data: [{
-		type: "pie",
-		showInLegend: false,
-		toolTipContent: "<b>{name}</b>:(#percent%)",
-		indexLabel: "{name}",
-		legendText: "{name} (#percent%)",
-		indexLabelPlacement: "inside",
-    
-		dataPoints: [
-			{ y: 65, name: "Male", color: "#511890", indexLabelFontColor: "#ffffff"},
-			{ y: 35, name: "Female",color: "#009193", indexLabelFontColor: "#ffffff"},
-			]
-	}]
-};
-// $("#chartContainer").CanvasJSChart(options);
-
-}
 
 
 
@@ -318,6 +306,16 @@ $(document).ready(function() {
       }
   });
 
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 600) {
+        $("#header_section").addClass("shadow_outer position-fixed");
+    } else {
+        $("#header_section").removeClass("shadow_outer position-fixed");
+    }
+});
+
+
   $('#progress-value').click(function() {
       $("html, body").animate({
           scrollTop: 0
@@ -333,8 +331,6 @@ $(".help_tag").click(function(){
 $(".faq_close").click(function(){
   $(".fixed_faq").removeClass('r-w-0');
 });
-
-
 
 });
 
@@ -389,7 +385,7 @@ window.onload = calcScrollValue;
 
 
 
-
+// hover dropdown 
 $(document).ready(function(){
   $(".dropdown").hover(            
       function() {
