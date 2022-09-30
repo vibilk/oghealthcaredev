@@ -1,4 +1,4 @@
-$(window).resize(function(){location.reload();});
+// $(window).resize(function(){location.reload();});
  
  // loader 
    
@@ -16,12 +16,27 @@ jQuery(document).ready(function ($) {
       nav: true,
       navigation: true,
       slideSpeed: 300,
-      dots: true,
+      rewind: true,
+      dots: false,
       paginationSpeed: 500,
       items: 1,
       singleItem: true,
-      autoPlay: 4000,
-      navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"]
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:false,
+      navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
+      responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+        },
+        1000:{
+            items:1,
+        }
+    }
     });
 
     
@@ -66,9 +81,7 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
   });
 
-
-
-
+  
 
 
 
@@ -173,9 +186,21 @@ videoSlider.owlCarousel({
   autoplayTimeout:3000,
   autoplayHoverPause:false,
   nav: true,
-  dots: true,
+  dots: false,
   items: 1,
-  navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"]
+  navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
+  responsive:{
+    0:{
+        items:1,
+        nav:false
+    },
+    600:{
+        items:1,
+    },
+    1000:{
+        items:1,
+    }
+}
 });
 
 videoSlider.on('translate.owl.carousel', function (e) {
