@@ -19,6 +19,9 @@
     --primary-color16: #110933;
     --primary-color17: #ffffff;
     --primary-color18: #531B93;
+    --primary-color19: #ab61ff;
+    --primary-color20: #ffffff;
+    --primary-color21: #ffffff;
 }
 
 .is_dark {
@@ -40,6 +43,9 @@
     --primary-color16: #EBEBEB;
     --primary-color17: #531B93;
     --primary-color18: #F3EFF7;
+    --primary-color19: #531B93;
+    --primary-color20: #531B93;
+    --primary-color21: #5E5E5E;
 }
 
 * {
@@ -57,7 +63,7 @@ body {
 
 
 .color-theme {
-    color: #531B93;
+    color: var(--primary-color19);
 }
 
 
@@ -201,8 +207,9 @@ a {
         left: 0;
         right: 0;
         width: 100%;
-        margin-top: 7px;
+        margin-top: -1px;
         border-radius: unset !important;
+        border-right: unset;
     }
 #header_section .navbar-nav{
     justify-content: space-evenly;
@@ -236,7 +243,8 @@ text-align: justify;
 
 
 #main_nav ul li a:hover{
-    color: #ad65ff;
+    color: #fff;
+    background-color: #531B93;
 }
 #header_section nav{
     padding: 0px 16px !important;
@@ -257,9 +265,12 @@ text-align: justify;
 .col-megamenu ul li a{
     font-size: 14px !important;
 }
-
-.megamenu_form{
-
+.col-megamenu ul li a:hover{
+    background-color: transparent !important;
+    color:#aa60ff !important;
+}
+.megamenu_form button{
+ 
 }
 .megamenu_form input, 
 .megamenu_form textarea{
@@ -272,10 +283,16 @@ border-radius: 4px !important;
 }
 .megamenu_form button{
     background: #531b93;
-    border: none;
+    border: 2px solid transparent !important;
     font-size: 14px;
+    transition: all .5s;
 }
-
+.megamenu_form button:hover{
+    transition: all .5s;
+    background: #fff;
+    color: #531b93;
+    border: 2px solid #531b93 !important;
+}
 
 
 
@@ -305,7 +322,10 @@ border-radius: 4px !important;
   
 
 
-
+.technology_lg{
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 
 #header_section {
@@ -373,6 +393,7 @@ section {
     color: var(--primary-color);
     font-weight: 500;
     font-size: 16px;
+    padding: 14px 20px;
 }
 
 #main_nav ul li a.active {
@@ -420,7 +441,7 @@ section {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     z-index: 998;
-    padding: 8px 0px;
+    padding: 0px 0px;
   
 }
 .shadow_outer{
@@ -489,9 +510,9 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    height: 300px;
+    height: 50%;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .owl-item.active .owl-title {
@@ -620,12 +641,29 @@ section {
 .horizontal_section {
     padding-top: 6rem;
 }
-
+/* 
 .horizontal_section::before {
     content: "";
-
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(83 27 146 / 14%) 0%, rgb(0 0 0 / 2%) 35%, rgb(0 0 0 / 0%) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 38%;
+    height: 100%;
+    z-index: 9;
 }
-
+.horizontal_section::after {
+    content: "";
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgb(83 27 146 / 14%) 0%, rgb(0 0 0 / 2%) 35%, rgb(0 0 0 / 0%) 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38%;
+    height: 100%;
+    z-index: 9;
+} */
 .year_title {
     text-align: center;
     font-size: 22rem;
@@ -699,7 +737,7 @@ color: #fff !important;
 .employee_card .em_name {
     font-size: 20px;
     font-weight: 500;
-    color: #531B93;
+    color: var(--primary-color17);
     margin-bottom: 10px;
 }
 
@@ -738,7 +776,7 @@ color: #fff !important;
 }
 
 .update_profile-name {
-    color: #531B93;
+    color: var(--primary-color17);
 }
 
 .date_in {
@@ -823,11 +861,11 @@ color: #fff !important;
 }
 
 .accordion_collapse .card-header a:not(.collapsed) {
-    color: #511890;
+    color: var(--primary-color19);
 }
 
 .accordion_collapse .card-body {
-    color: #8618ff;
+    color: var(--primary-color19);
 }
 
 .accordion_collapse .card-header a::after {
@@ -895,7 +933,7 @@ color: #fff !important;
 
 .testimonial_content p {
     font-size: 1.8rem;
-    color: #5E5E5E;
+    color: var(--primary-color21);
 }
 
 .client_position {
@@ -905,7 +943,7 @@ color: #fff !important;
 .client_position p {
     font-size: 18px;
     text-transform: uppercase;
-    color: #5E5E5E;
+    color: var(--primary-color21);
 }
 
 #testimonialSlider .owl-stage-outer::before {
@@ -1108,7 +1146,7 @@ color: #fff !important;
 }
 
 .form_title {
-    color: #531B93;
+    color: var(--primary-color20);
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 16px;
@@ -1392,6 +1430,7 @@ color: #fff !important;
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .service_content_part {
@@ -1485,6 +1524,7 @@ color: #fff !important;
 .service_card_body {
     background-color: var(--primary-color14);
     height: 100%;
+    border-radius: 10px;
 }
 
 .service_list {
@@ -1748,7 +1788,7 @@ color: #fff !important;
     height: 12px;
     border-radius: 5px;
     background: #ffffff;
-    border: 2px solid #51189054;
+    border: 2px solid #2C3E50;
     outline: none;
     padding: 0;
     margin: 0;
@@ -1761,7 +1801,7 @@ color: #fff !important;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #2c3e50;
+    background: #531B93;
     cursor: pointer;
     -webkit-transition: background 0.15s ease-in-out;
     transition: background 0.15s ease-in-out;
@@ -1981,7 +2021,7 @@ color: #fff !important;
 .att_value-sm {
     position: absolute;
     top: 60px;
-    right: 0;
+    right: -14px;
     font-size: 16px;
     color: #009193;
     line-height: 22px;
@@ -2085,6 +2125,7 @@ background: #b286e3;
     border: 1px solid #ddd;
     padding: 16px;
     border-radius: 10px;
+    margin-bottom: 16px;
 }
 
 
@@ -2234,7 +2275,9 @@ background: #b286e3;
 .help_tag p i{
     transform: rotate(-90deg);
 }
-
+#owl-banner .owl-nav {
+    margin: 0px;
+}
 #heroBanner .owl-nav, #owl-banner .owl-nav{
     opacity: 0;
     -webkit-transition: all 0.3s;
@@ -2395,6 +2438,69 @@ transition: all .5s;
         flex-direction: column;
         align-items: center;
     }
+    .nav_tabs li a{
+        padding: 12px 12px;
+    }
+    .dropdown-menu.megamenu, .col-megamenu {
+        padding: 5px 0px !important;
+    }
+    .lifeOg_card .lifeOg_img img{
+        height: 160px;
+    }
+    #header_section nav {
+        padding: 6px 16px !important;
+    }
+    #testimonialSlider .owl-stage-outer::before,
+    #testimonialSlider .owl-stage-outer::after{
+        width: 60px;
+    height: 60px;
+    background-size: 60px;
+    }
+    .about_card {
+        padding: 2px 12px;
+    }
+    .chart_container .chart_cart{
+        padding: 10px 0px;
+    }
+    #cookiebarBox .risk-dismiss a, .cookie_content p, .employee_card .em_detail, .lifeOg_text, .lifeOg_date {
+        font-size: 12px;
+    }
+    .section_title_content, .about_card_content h2,.join_partner h4 {
+        font-size: 20px;
+    }
+    .form_section {
+        padding: 10px 14px;
+    }
+    .form_title {
+        font-size: 22px;
+        text-align: center;
+    }
+    .home_testimonial-content{
+        padding: 3rem 18px;
+    }
+    .home_testimonial-content h4, .head_point, .home_blog_content h3{
+        font-size: 20px;
+    }
+    .p-content, .nav_tabs li a,.date_updated li,.testimonial_content p,.client_position p, .home_testimonial-content p, .accordion_collapse .card-body, .career_img_link li p, .home_blog_content p, .about_card_content .p-content{
+        font-size: 14px;
+    }
+    .subscribe_section h2 {
+        font-size: 20px;
+        margin-bottom: 8px !important;
+    }
+    .client_position p{
+        margin-bottom: 0px;
+    }
+    .career_img_link li a{
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+     .list_point li, .accordion_collapse .card-header a, .chart_cart .chart_title, .employee_card .em_name, .lifeOg_title{
+        font-size: 16px !important;
+    }
+    .tab_content{
+        padding: 0px !important;
+    }
     .img_parallax {
         background-position: 70% 100%;
     }
@@ -2416,7 +2522,8 @@ transition: all .5s;
     }
 
     .career_img_title {
-        font-size: 2rem;
+        font-size: 20px;
+        text-align: center;
     }
 
     .career_2_bg {
@@ -2459,9 +2566,11 @@ transition: all .5s;
 
     .message_history_list {
         position: relative;
-        height: 480px;
+        height: auto;
     }
-
+    .chat_content p{
+        font-size: 12px;
+    }
     .banner_section {
         margin-top: 0px;
     }
@@ -2476,9 +2585,13 @@ transition: all .5s;
     }
 
     .year_title {
-        font-size: 9rem;
+        font-size: 6rem;
     }
-
+    #horizontal .owl-dots button span {
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 50px !important;
+    }
     .banner_btn a {
         font-size: 10px;
     }
@@ -2493,9 +2606,13 @@ transition: all .5s;
     }
 
     #horizontal .owl-dots {
-        top: 10%;
+        top: auto;
+    bottom: 0;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row !important;
     }
-
+   
     .contact_container {
         flex-direction: column;
     }
@@ -2532,6 +2649,7 @@ transition: all .5s;
 
     .testimonial_card {
         width: 90%;
+    margin-left: 0px;
     }
 }
 
