@@ -373,7 +373,9 @@ position: absolute;
 .section_title {
     color: var(--primary-color17);
 }
-
+.section_title_2{
+    color: #511890;
+}
 .section_title_content {
     color: var(--primary-color4);
 }
