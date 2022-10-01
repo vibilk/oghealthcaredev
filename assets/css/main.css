@@ -2840,7 +2840,7 @@ transition: all .5s;
         justify-content: center !important;
     }
     #header_section .navbar {
-        justify-content: center;
+        justify-content: end;
     }
     #main_nav{
         padding-bottom: 10px;
