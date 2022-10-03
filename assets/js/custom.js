@@ -381,7 +381,14 @@ $(document).ready(function () {
   });
 
 });
-
+$(document).mouseup(function(e) 
+{
+    var container = $(".fixed_faq ");
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+      $(".fixed_faq").removeClass('r-w-0');
+    }
+});
 
 
 $(".dark").on('click', function (e) {
@@ -508,6 +515,5 @@ $(document).ready(function () {
 
 $('.theme_check').on('click', function(e) {
   $('.theme_mode').toggleClass("pressed"); 
-  // $(".light_mode").toggleClass("pressed")
   e.preventDefault();
 });
