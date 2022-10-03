@@ -133,9 +133,10 @@ a {
 .theme_mode label {
 	cursor: pointer;
 	text-indent: -9999px;
-	width: 80px;
+	/* width: 80px; */
+    width: 40px;
     height: 40px;
-	background: grey;
+	background: #8080802e;
 	display: block;
 	border-radius: 100px;
 	position: relative;
@@ -148,7 +149,7 @@ a {
 	left: 5px;
 	width: 30px;
     height: 30px;
-	background: #fff;
+	/* background: #fff; */
 	border-radius: 90px;
 	transition: 0.3s;
     z-index: 5;
@@ -158,34 +159,63 @@ a {
 	background: #531b93;
 }
 
-.theme_mode input:checked + label:after {
+/* .theme_mode input:checked + label:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
+} */
+.theme_mode{
+    width: 30px;
+    height: 30px;
+}
+.theme_mode img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: all .5s;
+    
+}
+.dark_mode{
+    opacity: 0;
+}
+.pressed .dark_mode{
+    opacity: 1 !important;
+    transform: rotate(360deg);
+    transition: all .5s;
+}
+.pressed .light_mode{
+    opacity: 0 !important;
+    transform: rotate(360deg);
+    transition: all .5s;
 }
 
 .theme_mode label:active:after {
 	width: 45px;
 }
-.theme_mode::before{
+/* .theme_mode::before{
     content: "";
-    background: url("../images/sun.png") no-repeat;
+    background: url("../images/sun.svg") no-repeat;
     position: absolute;
-    right: 6px;
+    right: 7px;
+    opacity: 0;
     top: 8px;
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     z-index: 1;
 }
 .theme_mode::after{
     content: "";
-    background: url("../images/moon.png") no-repeat;
+    background: url("../images/moon.svg") no-repeat;
+    opacity: 1;
     position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 28px;
-    height: 28px;
+    right: 7px;
+    top: 8px;
+    width: 25px;
+    height: 25px;
     z-index: 1;
-}
+} */
 
 
 @keyframes zoom-in-zoom-out {
@@ -425,7 +455,7 @@ section {
     justify-content: flex-end;
     column-gap: 10px;
     margin: 0;
-    padding: 5px 8px;
+    padding: 5px 5px;
 }
 
 .social_media li a {
