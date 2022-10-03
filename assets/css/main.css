@@ -697,10 +697,6 @@ section {
 }
 
 
-.active.center .selected::before{
-content: "";
-}
-
 /* .horizontal_section::before {
     content: "";
     background: rgb(2,0,36);
@@ -2338,7 +2334,8 @@ background: #b286e3;
     border: none !important;
     font-size: 16px;
     border-top: 3px solid transparent !important;
-    border-radius: 8px!important;
+    border-radius: 4px!important;
+    padding: 6px 5px !important; 
 }
 
 .fixed_faq-tab li a.active {
@@ -2348,7 +2345,7 @@ background: #b286e3;
 }
 .fixed_faq-tab{
     border: none !important;
-    padding: 6px 6px !important;
+    padding: 3px 3px !important;
     column-gap: 6px;
 }
 .help_tag{
