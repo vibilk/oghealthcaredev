@@ -279,8 +279,8 @@ text-align: justify;
 
 
 #main_nav ul li a:hover{
-    color: #fff;
-    background-color: #531B93;
+    color: #aa60ff;
+    /* background-color: #531B93; */
 }
 #header_section nav{
     padding: 0px 16px !important;
@@ -300,6 +300,7 @@ text-align: justify;
 
 .col-megamenu ul li a{
     font-size: 14px !important;
+    color: #5e5e5e !important;
 }
 .col-megamenu ul li a:hover{
     background-color: transparent !important;
@@ -376,7 +377,8 @@ position: absolute;
 
 
 #header_section {
-    background-color: var(--primary-color2);
+    /* background-color: var(--primary-color2); */
+    background-color: transparent;
 }
 .dark_icon{
     filter: brightness(0) saturate(100%);
@@ -424,8 +426,11 @@ section {
 }
 .header_logo {
     width: 200px;
+    filter: grayscale(4) contrast(1) brightness(6);
 }
-
+.shadow_outer  .header_logo{
+    filter:unset !important;
+}
 .social_media li a img {
     width: 14px;
     height: 14px;
@@ -439,7 +444,7 @@ section {
     box-shadow: 0px 0px 0px 2px #ebebebb0, 0px 0px 0px 4px #0a090966;
 }
 #main_nav ul li a {
-    color: var(--primary-color);
+    color: #fff;
     font-weight: 500;
     font-size: 16px;
     padding: 14px 20px;
@@ -494,7 +499,14 @@ section {
   
 }
 .shadow_outer{
+    background-color: var(--primary-color2) !important; 
     box-shadow: 0px 5px 20px #531b9380;
+}
+.shadow_outer #main_nav ul li a{
+color: var(--primary-color21) !important;
+}
+.shadow_outer #main_nav ul li a:hover{
+    color: #aa60ff !important;
 }
 .top_header {
     position: relative;
