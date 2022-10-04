@@ -1,4 +1,10 @@
-// $(window).resize(function(){location.reload();});
+$(window).resize(function(){location.reload();});
+
+history.scrollRestoration = "manual";
+$(window).on('beforeunload', function(){
+      $(window).scrollTop(0);
+});
+
 
 // loader 
 
