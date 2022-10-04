@@ -302,6 +302,12 @@ text-align: justify;
     font-size: 14px !important;
     color: #5e5e5e !important;
 }
+.is_light .col-megamenu ul li a{
+    color: #fff !important;
+}
+.col-megamenu ul li a{
+
+}
 .col-megamenu ul li a:hover{
     background-color: transparent !important;
     color:#aa60ff !important;
