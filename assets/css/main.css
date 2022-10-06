@@ -715,37 +715,40 @@ color: var(--primary-color21) !important;
 }
 
 
-/* .horizontal_section::before {
+.horizontal_section::before {
     content: "";
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, #00000000, #00000000, #00000000);
+    background: linear-gradient(90deg, #ffffff, #ffffffdb, #ffffff4f);
     position: absolute;
     left: 0;
     top: 0;
-    width: 38%;
+    width: 20%;
     height: 100%;
-    z-index: 9;
+    z-index: 2;
 }
 .horizontal_section::after {
     content: "";
     background: rgb(2,0,36);
-    background: linear-gradient(270deg, #00000000, #00000000, #00000000);
+    background: linear-gradient(270deg, #ffffff, #ffffffdb, #ffffff4f);
     position: absolute;
     right: 0;
     top: 0;
-    width: 38%;
+    width: 20%;
     height: 100%;
     z-index: 9;
-}  */
+} 
 .year_title {
     text-align: center;
-    font-size: 10rem;
+    font-size: 40px;
     font-weight: 800;
     color: var(--primary-color);
-    line-height: 280px;
+    line-height: 40px;
+    margin-bottom: 30px;
     display: inline-block;
     letter-spacing: unset;
-    cursor: w-resize;
+}
+.year_content{
+
 }
 .horizontal-swiper .swiper-slide{
 text-align: center;
@@ -850,7 +853,7 @@ color: #fff !important;
 
 }
 .open_position_section{
-    background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
+    /* background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%); */
 }
 .em_update {
     display: flex;
@@ -1181,6 +1184,7 @@ color: #fff !important;
 .join_partner {
     background: var(--primary-color18);
     display: flex;
+    flex-direction: column;
     width: 70%;
     margin: 18px auto;
     border-radius: 12px;
@@ -1190,9 +1194,9 @@ color: #fff !important;
 }
 
 .join_partner h4 {
-    margin: 0;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 600;
+    margin-bottom: 2rem;
     color: var(--primary-color15);
 }
 
@@ -2208,10 +2212,11 @@ color: #fff !important;
 .subscribe_section {
     display: flex;
     align-items: center;
-    padding: 22px 20px;
+    padding: 70px 80px;
     color: #fff;
     column-gap: 14px;
     border-radius: 10px;
+    flex-direction: column;
 }
 
 .subscribe_section form {
@@ -2240,8 +2245,9 @@ background: #b286e3;
 }
 
 .subscribe_section h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
+    margin-bottom: 3rem !important;
 }
 .home_blog_card{
     border: 1px solid #ddd;
