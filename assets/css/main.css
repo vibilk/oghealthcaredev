@@ -66,7 +66,9 @@ body {
     font-family: 'Poppins', sans-serif !important;
     background-color: var(--primary-color2) !important;
 }
-
+.body_hidden{
+    overflow: hidden;
+}
 
 .color-theme {
     color: var(--primary-color19);
@@ -277,7 +279,9 @@ a {
 text-align: justify;
 }
 
-
+.theme_mode{
+    position: relative;
+}
 #main_nav ul li a:hover{
     color: #aa60ff;
     /* background-color: #531B93; */
@@ -749,6 +753,7 @@ color: var(--primary-color21) !important;
 }
 .year_content{
     padding: 0px 54px;
+    color: var(--primary-color4);
 }
 .horizontal-swiper .swiper-slide{
 text-align: center;
@@ -1185,10 +1190,10 @@ color: #fff !important;
     background: var(--primary-color18);
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin: 18px auto;
     border-radius: 12px;
-    padding: 25px 30px;
+    padding: 80px 30px;
     justify-content: space-between;
     align-items: center;
 }
@@ -1205,7 +1210,7 @@ color: #fff !important;
     margin: 0;
     list-style-type: none;
     display: flex;
-    column-gap: 10px;
+    column-gap: 50px;
     align-items: center;
 }
 
@@ -2212,7 +2217,7 @@ color: #fff !important;
 .subscribe_section {
     display: flex;
     align-items: center;
-    padding: 70px 80px;
+    padding: 90px 80px;
     color: #fff;
     column-gap: 14px;
     border-radius: 10px;
@@ -2514,7 +2519,7 @@ transition: all .5s;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    z-index: 998;
+    z-index: 994;
   }
   #progress-value {
     display: block;
@@ -2662,6 +2667,7 @@ display: inline-block;
     }
     .header_logo{
         filter: unset !important;
+        width: 170px;
     }
     .counter_part {
         justify-content: space-evenly;
@@ -2964,6 +2970,17 @@ width: 100% !important;
 }
 
 @media screen and (max-width:440px) {
+    .theme_mode{
+        position: absolute !important;
+    right: 45px;
+    top: 8px;
+    }
+    .subscribe_section{
+        padding: 70px 20px;
+    }
+    .subscribe_section form{
+        width: 100% !important;
+    }
     #header_section .navbar{
         
     }
@@ -3042,10 +3059,41 @@ width: 100% !important;
     #header_section .navbar {
         justify-content: start;
     }
-    #main_nav{
+    /* #main_nav{
         padding-bottom: 10px;
         height: 100vh;
     overflow-y: auto;
+    } */
+    #main_nav{
+        padding-bottom: 10px;
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+        position: fixed;
+        top: 85px;
+        background: var(--primary-color2);
+        width: 100%;
+        right: -100%;
+        display: block;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    #main_nav.show{
+        right: 0px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    #main_nav::before{
+        content: "";
+
+    }
+    #header_section .navbar-toggler{
+        position: relative;
+        z-index: 8;
+        box-shadow: none !important;
     }
     .theme_mode {
         margin-right: 0px;
