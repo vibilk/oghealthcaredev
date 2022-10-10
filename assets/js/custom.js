@@ -1,9 +1,9 @@
-// $(window).resize(function(){location.reload();});
+$(window).resize(function(){location.reload();});
 
-history.scrollRestoration = "manual";
-$(window).on('beforeunload', function(){
-      $(window).scrollTop(0);
-});
+// history.scrollRestoration = "manual";
+// $(window).on('beforeunload', function(){
+//       $(window).scrollTop(0);
+// });
 
 // loader 
 
@@ -43,10 +43,6 @@ jQuery(document).ready(function ($) {
       }
     }
   });
-
-
-
-
 
 });
 
@@ -447,7 +443,7 @@ window.onload = calcScrollValue;
 
 // hover dropdown 
 $(document).ready(function () {
-  $(".dropdown").hover(
+  $(".dropdown_hover").hover(
     function () {
       $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn("100");
       $(this).toggleClass('open');
@@ -462,44 +458,15 @@ $(document).ready(function () {
 
 
 
+
+// toggle button 
 $('.theme_check').on('click', function(e) {
   $('.theme_mode').toggleClass("pressed"); 
   e.preventDefault();
 });
 
 
-// counter 
-// var counted = 0;
-// $(window).scroll(function() {
 
-//   var oTop = $('#counter').offset().top - window.innerHeight;
-//   if (counted == 0 && $(window).scrollTop() > oTop) {
-//     $('.count').each(function() {
-//       var $this = $(this),
-//         countTo = $this.attr('data-count');
-//       $({
-//         countNum: $this.text()
-//       }).animate({
-//           countNum: countTo
-//         },
-
-//         {
-
-//           duration: 3000,
-//           easing: 'swing',
-//           step: function() {
-//             $this.text(Math.floor(this.countNum));
-//           },
-//           complete: function() {
-//             $this.text(this.countNum);
-//           }
-
-//         });
-//     });
-//     counted = 1;
-//   }
-
-// });
 
 
 
@@ -524,4 +491,13 @@ $('#customers-testimonials').owlCarousel({
       items: 3
     }
   }
+});
+
+
+
+// mobile sidebar menu
+$(document).ready(function(){
+  $(".menu_icon").click(function(){
+    $("html").toggleClass("body_hidden");
+  });
 });
