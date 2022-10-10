@@ -69,7 +69,7 @@
               <li class="nav-item active"> <a class="nav-link" href="index.html">Home </a> </li>
 
               <!-- about menu start  -->
-              <li class="nav-item dropdown has-megamenu">
+              <li class="nav-item dropdown has-megamenu dropdown_hover">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> About
                 </a>
                 <div class="dropdown-menu megamenu px-4" role="menu">
@@ -137,8 +137,8 @@
 
 
               <!-- Careers menu start  -->
-              <li class="nav-item dropdown has-megamenu">
-                <a class="nav-link dropdown-toggle" href="career.html" data-bs-toggle="dropdown"> Careers </a>
+              <li class="nav-item dropdown has-megamenu dropdown_hover">
+                <a class="nav-link dropdown-toggle active" href="career.html" data-bs-toggle="dropdown"> Careers </a>
                 <div class="dropdown-menu megamenu px-4" role="menu">
                   <div class="container">
                     <div class="row g-3">
@@ -204,7 +204,7 @@
 
 
               <!-- Life menu start  -->
-              <li class="nav-item dropdown has-megamenu">
+              <li class="nav-item dropdown has-megamenu dropdown_hover">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Life </a>
                 <div class="dropdown-menu megamenu px-4" role="menu">
                   <div class="container">
@@ -273,7 +273,7 @@
               <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
 
               <!-- Contact Us menu start  -->
-              <li class="nav-item dropdown has-megamenu">
+              <!-- <li class="nav-item dropdown has-megamenu">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Contact Us </a>
                 <div class="dropdown-menu megamenu megamenu_sm " role="menu">
                   <div class="row g-3">
@@ -307,7 +307,8 @@
 
                   </div>
                 </div>
-              </li>
+              </li> -->
+              <li class="nav-item"><a class="nav-link" href="#contactForm">Contact Us</a></li>
               <!-- Contact Us menu end  -->
 
 
@@ -331,7 +332,7 @@
             <img src="assets/images/sun.png" alt="light">
           </a>
         </div> -->
-        <div class="theme_mode d-flex position-relative">
+        <div class="theme_mode d-flex">
           <input type="checkbox" id="switch" onclick="switchTheme()" class="theme_check" />
           <img src="assets/images/moon.svg" alt="light" class="light_mode">
           <img src="assets/images/sun.svg" alt="dark" class="dark_mode">
@@ -632,185 +633,6 @@
 
 
 
-  <!-- Faq start  -->
-  <section class="faq_section" data-aos="fade-up" data-aos-duration="2000">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
-          <h4 class="section_title">Confused? Don't be, we've been doing this for 22 years</h4>
-          <h1 class="section_title_content">Frequently Asked Questions</h1>
-        </div>
-        <div class="col-12 mt-5">
-
-          <div class="tab_section">
-            <!-- tab list  -->
-            <ul class="nav nav-tabs nav_tabs" role="tablist" data-aos="fade-up" data-aos-duration="2000">
-              <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#applicants">For applicants</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#clients">For clients</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#others">For others</a>
-              </li>
-            </ul>
-
-
-
-            <!-- Tab panes -->
-            <div class="tab-content tab_content" data-aos="fade-up" data-aos-duration="2000">
-              <!-- tab 1 start  -->
-              <div id="applicants" class="container tab-pane active">
-                <div id="accordionOne" class="accordion_collapse">
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="btn" data-bs-toggle="collapse" href="#applicantOne">
-                        Applicant Question?
-                      </a>
-                    </div>
-                    <div id="applicantOne" class="collapse show" data-bs-parent="#accordionOne">
-                      <div class="card-body">
-                        Answer
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed btn" data-bs-toggle="collapse" href="#applicantTwo">
-                        Applicant Question?
-                      </a>
-                    </div>
-                    <div id="applicantTwo" class="collapse" data-bs-parent="#accordionOne">
-                      <div class="card-body">
-                        Answer
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed btn" data-bs-toggle="collapse" href="#applicantThree">
-                        Applicant Question?
-                      </a>
-                    </div>
-                    <div id="applicantThree" class="collapse" data-bs-parent="#accordionOne">
-                      <div class="card-body">
-                        Answer
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <!-- tab 1 end  -->
-
-
-
-
-              <!-- tab 2 start  -->
-              <div id="clients" class="container tab-pane fade">
-                <div id="accordionFaq" class="accordion_collapse">
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="btn" data-bs-toggle="collapse" href="#clientOne">
-                        Client Question?
-                      </a>
-                    </div>
-                    <div id="clientOne" class="collapse show" data-bs-parent="#accordionFaq">
-                      <div class="card-body">
-                        Answer
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed btn" data-bs-toggle="collapse" href="#clientTwo">
-                        Client Question?
-                      </a>
-                    </div>
-                    <div id="clientTwo" class="collapse" data-bs-parent="#accordionFaq">
-                      <div class="card-body">
-                        Answer
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed btn" data-bs-toggle="collapse" href="#clientThree">
-                        Client Question?
-                      </a>
-                    </div>
-                    <div id="clientThree" class="collapse" data-bs-parent="#accordionFaq">
-                      <div class="card-body">
-                        Answer
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- tab 2 end  -->
-
-
-
-              <!-- tab 3 start  -->
-              <div id="others" class="container tab-pane fade">
-                <div id="accordionThree" class="accordion_collapse">
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="btn" data-bs-toggle="collapse" href="#otherOne">
-                        Other Question?
-                      </a>
-                    </div>
-                    <div id="otherOne" class="collapse show" data-bs-parent="#accordionThree">
-                      <div class="card-body">
-                        Answer
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed btn" data-bs-toggle="collapse" href="#otherTwo">
-                        Other Question?
-                      </a>
-                    </div>
-                    <div id="otherTwo" class="collapse" data-bs-parent="#accordionThree">
-                      <div class="card-body">
-                        Answer
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed btn" data-bs-toggle="collapse" href="#otherThree">
-                        Other Question?
-                      </a>
-                    </div>
-                    <div id="otherThree" class="collapse" data-bs-parent="#accordionThree">
-                      <div class="card-body">
-                        Answer
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- tab 3 end  -->
-
-
-
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Faq end  -->
-
-
-
 
   <!-- open position start  -->
 
@@ -1099,7 +921,7 @@
 
 
   <!-- contact form start  -->
-  <section class="contact_section py-0" data-aos="fade-up" data-aos-duration="2000">
+  <section class="contact_section py-0" id="contactForm">
     <div class="contact_container">
       <div class="map_section">
         <iframe
@@ -1429,21 +1251,17 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/jquery.mousewheel.min.js"></script>
+  <!-- <script src="assets/js/jquery.mousewheel.min.js"></script> -->
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
-  <!-- <script src="assets/js/horizontal.js"></script> -->
-  <!-- <script src="assets/js/main.js"></script> -->
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/switchmode.js"></script>
 
   <script>
     AOS.init();
-  </script>
 
 
 
-  <script>
     var slider1 = new Swiper('.slider', {
       slidesPerView: 2,
       centeredSlides: true,
