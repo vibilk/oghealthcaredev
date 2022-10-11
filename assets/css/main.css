@@ -2359,7 +2359,7 @@ background: #b286e3;
 .fixed_faq {
     position: fixed;
     z-index: 10;
-    right: -49.8%;
+    right: -50%;
     top: 30%;
     background: #fff;
     width: 50%;
@@ -2376,7 +2376,7 @@ background: #b286e3;
     color: #fff;
 }
 .fixed_faq:hover{
-    right: -49.5%;
+    right: -49.6%;
     transition: all .5s;
 }
 .faq_close{
@@ -2428,7 +2428,7 @@ background: #b286e3;
     background: var(--primary-color13);
     position: absolute;
     top: 43%;
-    left: -89px;
+    left: -93px;
     transform: rotate(90deg);
     color: #fff;
     padding: 6px 10px;
@@ -3213,7 +3213,7 @@ width: 100% !important;
         box-shadow: 1px 1px 9px 0px #541a96a6;
     }
     .fixed_faq, .fixed_faq:hover{
-        right: -88.5%;
+        right: -90%;
     }
    
 }
