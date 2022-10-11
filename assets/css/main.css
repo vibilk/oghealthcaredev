@@ -934,6 +934,7 @@ color: #fff !important;
     border-radius: 5px;
     color: #2c2c2c;
     border: none !important;
+    text-transform: capitalize;
 }
 
 .nav_tabs li a.active {
