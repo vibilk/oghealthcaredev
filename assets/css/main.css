@@ -489,7 +489,8 @@ section {
 .apply_btn a:hover {
     background: #531B93;
     text-decoration: none;
-    padding: 8px 60px;
+    padding: 8px 20px;
+    white-space: nowrap;
     border-radius: 50px;
     color: #fff;
     display: block;
@@ -2198,6 +2199,10 @@ color: #fff !important;
     -webkit-transform: translate(0, -14px) !important;
     transform: translate(0, -14px) !important;
     box-shadow: 1px -3px 16px rgb(47 83 109 / 12%);
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
 }
 .home_blog_content h3 {
     font-size: 22px;
@@ -2259,6 +2264,10 @@ background: #b286e3;
     padding: 0;
     border-radius: 10px;
     margin-bottom: 16px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
 }
 
 
@@ -2339,7 +2348,7 @@ background: #b286e3;
     background: #fff;
     width: 50%;
     display: none;
-    height: 200px;
+    height: calc(100vh - 480px);
     /* padding: 8px 12px; */
     padding: 0px 0px;
     border-left: 8px solid var(--primary-color13);
@@ -2384,9 +2393,9 @@ background: #b286e3;
     color: #000000a1 !important;
     border: none !important;
     font-size: 16px;
-    border-top: 3px solid transparent !important;
+    border-top: 0px solid transparent !important;
     border-radius: 4px!important;
-    padding: 6px 5px !important; 
+    padding: 10px 5px !important; 
 }
 
 .fixed_faq-tab li a.active {
@@ -2410,7 +2419,24 @@ background: #b286e3;
     cursor: pointer;
     border-radius: 0px 0px 8px 8px;
 }
-
+.fixed_faq-body{
+    position: relative;
+    border-radius: 2px;
+    outline: 1px solid #fff;
+    height: calc(100vh - 526px);
+    overflow-y: auto;
+}
+/* .support_col::before{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 0;
+    border-radius: 8px;
+} */
 .help_tag p i{
     transform: rotate(-90deg);
 }
