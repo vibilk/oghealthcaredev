@@ -510,7 +510,7 @@ $(document).ready(function(){
 
 // media query 
 $( window ).resize( function() {
-  if ( window.matchMedia( '(max-width:767px)' ).matches ) {
+  if ( window.matchMedia( '(max-width:1199px)' ).matches ) {
     $(".has-megamenu").removeClass('dropdown_hover');
     
   } else if ( window.matchMedia( '(max-width:991px)'.matches ) ) {
