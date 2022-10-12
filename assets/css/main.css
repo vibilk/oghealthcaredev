@@ -2355,11 +2355,14 @@ color: #fff !important;
     border-radius: 5px;
     padding: 10px 14px;
     font-size: 14px;
+    background-color: var(--primary-color22);
 }
-
+.subscribe_section form input:focus{
+    background-color: var(--primary-color22);
+}
 .subscribe_section button {
     margin-left: 14px;
-    background: #fff;
+    background: var(--primary-color22);
     color: #511890 !important;
     border-radius: 5px;
     padding: 10px 20px;
@@ -2726,7 +2729,7 @@ color: #fff !important;
 
 /* client testimonial  */
 .shadow-effect {
-    background: #fff;
+    background: var(--primary-color22);
     padding: 20px;
     border-radius: 4px;
     text-align: center;
