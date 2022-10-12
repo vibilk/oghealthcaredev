@@ -3,8 +3,8 @@
 history.scrollRestoration = "manual";
 $(window).on('beforeunload', function(){
       $(window).scrollTop(0);
-});
-
+     });
+$('boby').removeClass("is_light");
 // loader 
 
 $(window).on('load', function () {
