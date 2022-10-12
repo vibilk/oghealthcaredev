@@ -3565,6 +3565,9 @@ color: #fff !important;
     .header_logo {
         padding-top: 8px;
     }
+    #header_section nav {
+    padding: 4px 16px !important;
+}
     #main_nav {
         padding-bottom: 10px;
         height: calc(100vh - 100px);
@@ -3584,6 +3587,9 @@ color: #fff !important;
 
 
 @media (min-width:769px) and (max-width:992px) {
+    #header_section nav {
+        padding: 4px 16px !important;
+    }
     #main_nav {
         padding-bottom: 10px;
         height: calc(100vh - 96px);
