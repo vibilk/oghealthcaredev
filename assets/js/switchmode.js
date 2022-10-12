@@ -30,7 +30,7 @@ function getCookie(cname) {
 loadTheme()
 
 function loadTheme() {
-    var theme = getCookie(themeCookieName)
+    // var theme = getCookie(themeCookieName)
     body.classList.add(theme === "" ? themeDark : theme)
 }
 
@@ -39,11 +39,11 @@ function switchTheme() {
     if (body.classList.contains(themeLight)) {
         body.classList.remove(themeLight)
         body.classList.add(themeDark)
-        setCookie(themeCookieName, themeDark)
+        // setCookie(themeCookieName, themeDark)
 
     } else {
         body.classList.remove(themeDark)
         body.classList.add(themeLight)
-        setCookie(themeCookieName, themeLight)
+        // setCookie(themeCookieName, themeLight)
     }
 }
