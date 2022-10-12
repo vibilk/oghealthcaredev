@@ -364,6 +364,12 @@ $(document).ready(function () {
     }
   });
 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 800) {
+      $(".risk-dismiss").addClass("fade_top");
+    } 
+  });
+
 
   $('#progress-value').click(function () {
     $("html, body").animate({
@@ -375,7 +381,7 @@ $(document).ready(function () {
 
   // fixed faq 
   $(".help_tag").click(function () {
-    $(".fixed_faq").addClass('r-w-0');
+    $(".fixed_faq").toggleClass('r-w-0');
   });
   $(".faq_close").click(function () {
     $(".fixed_faq").removeClass('r-w-0');
