@@ -4,7 +4,12 @@ history.scrollRestoration = "manual";
 $(window).on('beforeunload', function(){
       $(window).scrollTop(0);
      });
-$('boby').removeClass("is_light");
+// $('boby').removeClass("is_light");
+
+$(window).on('load', function () {
+  $('boby').removeClass("is_light");
+});
+
 // loader 
 
 $(window).on('load', function () {
