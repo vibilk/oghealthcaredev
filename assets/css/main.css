@@ -3247,6 +3247,9 @@ color: #fff !important;
 }
 
 @media screen and (max-width:440px) {
+    .scroll_down {
+        bottom: 95px !important;
+    }
     .banner_section {
         height: calc(100vh - 124px);
         overflow: hidden;
