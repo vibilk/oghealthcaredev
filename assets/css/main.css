@@ -324,9 +324,11 @@ a {
 }
 
 #header_section nav {
-    padding: 0px 16px !important;
+    padding: 20px 16px !important;
 }
-
+.position-fixed#header_section nav {
+    padding: 4px 16px !important;
+}
 .megamenu_inner_title {
     color: var(--primary-color);
     border-bottom: 1px solid #ddd;
