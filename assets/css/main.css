@@ -3247,6 +3247,10 @@ color: #fff !important;
 }
 
 @media screen and (max-width:440px) {
+    .banner_section {
+        height: calc(100vh - 124px);
+        overflow: hidden;
+    }
     .theme_mode {
         position: absolute !important;
         right: 45px;
@@ -3329,9 +3333,9 @@ color: #fff !important;
         z-index: 0 !important;
     }
 
-    .scroll_down {
+    /* .scroll_down {
         display: none;
-    }
+    } */
 
     #horizontal {
         margin-top: 0rem;
