@@ -1,9 +1,11 @@
 // $(window).resize(function(){location.reload();});
 
-history.scrollRestoration = "manual";
-$(window).on('beforeunload', function(){
-      $(window).scrollTop(0);
-           });
+// history.scrollRestoration = "manual";
+// $(window).on('beforeunload', function(){
+//       $(window).scrollTop(0);
+     
+// });
+
 
 // loader 
 
@@ -13,6 +15,13 @@ $(window).on('load', function () {
   }, 800);
 });
 
+
+
+
+// AOS animation 
+AOS.init({
+  once: true,
+});
 
 
 
@@ -527,3 +536,103 @@ $( window ).resize( function() {
 
 } );
 $( window ).resize();
+
+
+
+
+
+// career swiper scroll 
+
+var slider1 = new Swiper('.slider', {
+  slidesPerView: 2,
+  centeredSlides: true,
+  paginationClickable: true,
+  loop: false,
+  spaceBetween: 30,
+  slideToClickedSlide: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  breakpoints: {
+// when window width is >= 320px
+0: {
+  slidesPerView: 1,
+  spaceBetween: 30
+},
+// when window width is >= 480px
+480: {
+  slidesPerView: 1,
+  spaceBetween: 30
+},
+// when window width is >= 640px
+640: {
+ 
+}
+}
+});
+
+
+
+// pie chart 
+window.onload = function() {
+
+  var options = {
+    exportEnabled: false,
+    animationEnabled: true,
+    backgroundColor: "#ffffff00",
+    data: [{
+      type: "pie",
+      showInLegend: false,
+      toolTipContent: "<b>{name}</b>:(#percent%)",
+      indexLabel: "{name}",
+      legendText: "{name} (#percent%)",
+      indexLabelPlacement: "inside",
+      
+      dataPoints: [
+        { y: 65, name: "Male", color: "#511890", indexLabelFontColor: "#ffffff"},
+        { y: 35, name: "Female",color: "#009193", indexLabelFontColor: "#ffffff"},
+        ]
+    }]
+  };
+  $("#chartContainer").CanvasJSChart(options);
+  
+  }
+  
+  
+  // counter 
+  var counted = 0;
+  $(window).scroll(function() {
+  
+    var oTop = $('#counter').offset().top - window.innerHeight;
+    if (counted == 0 && $(window).scrollTop() > oTop) {
+      $('.count').each(function() {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.text()
+        }).animate({
+            countNum: countTo
+          },
+  
+          {
+  
+            duration: 3000,
+            easing: 'swing',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+            }
+  
+          });
+      });
+      counted = 1;
+    }
+  
+  });
+  
