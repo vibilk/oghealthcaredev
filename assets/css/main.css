@@ -2753,7 +2753,11 @@ color: #fff !important;
     margin: 0 0 17px 0;
     font-weight: 300;
 }
-
+.client_name h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #531b93;
+}
 .testimonial-name {
     margin: -17px auto 0;
     display: table;
