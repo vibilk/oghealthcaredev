@@ -2758,6 +2758,12 @@ color: #fff !important;
     font-weight: 600;
     color: #531b93;
 }
+.diversity_title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 10px 16px;
+    color: #531b93;
+}
 .testimonial-name {
     margin: -17px auto 0;
     display: table;
