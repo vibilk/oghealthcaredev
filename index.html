@@ -1738,34 +1738,30 @@
   <script src="assets/js/switchmode.js"></script>
 
   <script>
-    AOS.init({
-  once: true,
-});
-    window.onload = function() {
+   // pie chart 
+window.onload = function() {
 
 var options = {
-	exportEnabled: false,
-	animationEnabled: true,
-	backgroundColor: "#F3EEF7",
-	data: [{
-		type: "pie",
-		showInLegend: false,
-		toolTipContent: "<b>{name}</b>:(#percent%)",
-		indexLabel: "{name}",
-		legendText: "{name} (#percent%)",
-		indexLabelPlacement: "inside",
+  exportEnabled: false,
+  animationEnabled: true,
+  backgroundColor: "#ffffff00",
+  data: [{
+    type: "pie",
+    showInLegend: false,
+    toolTipContent: "<b>{name}</b>:(#percent%)",
+    indexLabel: "{name}",
+    legendText: "{name} (#percent%)",
+    indexLabelPlacement: "inside",
     
-		dataPoints: [
-			{ y: 65, name: "Male", color: "#511890", indexLabelFontColor: "#ffffff"},
-			{ y: 35, name: "Female",color: "#009193", indexLabelFontColor: "#ffffff"},
-			]
-	}]
+    dataPoints: [
+      { y: 65, name: "Male", color: "#511890", indexLabelFontColor: "#ffffff"},
+      { y: 35, name: "Female",color: "#009193", indexLabelFontColor: "#ffffff"},
+      ]
+  }]
 };
 $("#chartContainer").CanvasJSChart(options);
 
 }
-
-
 
 
 // counter 
@@ -1800,6 +1796,7 @@ $(window).scroll(function() {
   }
 
 });
+
 
   </script>
 

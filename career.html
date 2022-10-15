@@ -1201,41 +1201,41 @@
   <script src="assets/js/switchmode.js"></script>
 
   <script>
-    AOS.init();
+    // career swiper scroll 
 
+var slider1 = new Swiper('.slider', {
+  slidesPerView: 2,
+  centeredSlides: true,
+  paginationClickable: true,
+  loop: false,
+  spaceBetween: 30,
+  slideToClickedSlide: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  breakpoints: {
+// when window width is >= 320px
+0: {
+  slidesPerView: 1,
+  spaceBetween: 30
+},
+// when window width is >= 480px
+480: {
+  slidesPerView: 1,
+  spaceBetween: 30
+},
+// when window width is >= 640px
+640: {
+ 
+}
+}
+});
 
-
-    var slider1 = new Swiper('.slider', {
-      slidesPerView: 2,
-      centeredSlides: true,
-      paginationClickable: true,
-      loop: false,
-      spaceBetween: 30,
-      slideToClickedSlide: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-      mousewheel: {
-        releaseOnEdges: true,
-      },
-      breakpoints: {
-    // when window width is >= 320px
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 30
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    640: {
-     
-    }
-  }
-    });
+  
   </script>
 </body>
 
