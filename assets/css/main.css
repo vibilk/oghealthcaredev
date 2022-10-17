@@ -2261,7 +2261,7 @@ color: #fff !important;
     font-size: 40px;
     font-weight: 500;
     color: #511890;
-    width: 230px;
+    width: 280px;
     margin: 0 auto;
 }
 
@@ -2889,6 +2889,18 @@ color: #fff !important;
 
 /* responsive  */
 @media screen and (max-width:768px) {
+    .bar_chart-col{
+        justify-content: center;
+    }
+    .mobile_order-1{
+        order: 1;
+    }
+    .mobile_order-2{
+        order: 2;
+    }
+    .mobile_text-center{
+        text-align: center;
+    }
     .diversity_section{
         background: #fff !important;
     }
@@ -3574,9 +3586,12 @@ color: #fff !important;
     .chart_container{
         flex-direction: column;
     }
+    .chart_container {
+        width: 100%;
+    }
     .diversity_section{
         background-image: url(../images/map-three.webp);
-        background-position: 83% 50%;
+        background-position: 70% 50%;
     }
     #main_nav ul li a {
         color: #5e5e5e;
@@ -3692,7 +3707,11 @@ color: #fff !important;
     }
 }
 
-
+@media (min-width:1201px) and (max-width:1500px) {
+    .diversity_section {
+        background-position: 54% 50%;
+    }
+}
 
 
 /* .horizontal_section */
