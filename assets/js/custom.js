@@ -491,6 +491,8 @@ $('#customers-testimonials').owlCarousel({
   center: true,
   items: 3,
   margin: 0,
+  nav:true,
+  navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
   autoplay: true,
   dots:true,
   autoplayTimeout: 8500,
