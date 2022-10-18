@@ -2746,7 +2746,36 @@ color: #fff !important;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
     border-radius: 20px;
 }
-
+#customers-testimonials .owl-nav{
+    opacity: 0;
+    transition: all .5s;
+}
+#customers-testimonials:hover  .owl-nav{
+    opacity: 1;
+    transition: all .5s;
+}
+#customers-testimonials .owl-nav .owl-prev{
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    background: #531b93e0;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50px;
+}
+#customers-testimonials .owl-nav .owl-next{
+    position: absolute;
+    top: 40%;
+    right: 4%;
+    background: #531b93e0;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50px;
+}
 #customers-testimonials .shadow-effect p {
     font-size: 16px;
     line-height: 1.5;
