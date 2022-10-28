@@ -486,6 +486,8 @@ a {
 .upload_cv .upload_btn{
     opacity: 0;
     width: 100px;
+    z-index: 9;
+    position: relative;
 }
 .upload_cv span{
     position: absolute;
