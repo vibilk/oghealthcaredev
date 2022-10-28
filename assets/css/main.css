@@ -294,7 +294,7 @@ a {
         border-radius: 14px !important;
         margin-top: -1px;
         border-right: unset;
-        z-index: 0;
+        z-index: 1;
     }
 
     #header_section .navbar-nav {
