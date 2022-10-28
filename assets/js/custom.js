@@ -57,6 +57,26 @@ jQuery(document).ready(function ($) {
 
 
 
+$('.megamenu_slider').owlCarousel({
+  loop:true,
+  margin:10,
+  navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
+  nav:true,
+  dots:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
+
+
 
 var owl = $('#horizontal');
 owl.owlCarousel({
@@ -215,8 +235,8 @@ videoSlider.owlCarousel({
   loop: false,
   rewind: true,
   margin: 0,
-  autoplay: true,
-  autoplayTimeout: 3000,
+  autoplay: false,
+  autoplayTimeout: 5000,
   autoplayHoverPause: false,
   nav: true,
   dots: false,
@@ -388,6 +408,17 @@ $(document).ready(function () {
   });
 
 
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".scroll_down").addClass("scroll_animate_fade");
+    } else {
+      $(".scroll_down").removeClass("scroll_animate_fade");
+    }
+  });
+
+
+
   // fixed faq 
   $(".help_tag").click(function () {
     $(".fixed_faq").toggleClass('r-w-0');
@@ -460,12 +491,14 @@ window.onload = calcScrollValue;
 $(document).ready(function () {
   $(".dropdown_hover").hover(
     function () {
-      $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn("100");
+      $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).show();
       $(this).toggleClass('open');
+      $(".megamenu").addClass("fade_animate");
     },
     function () {
-      $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeOut("100");
+      $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).hide();
       $(this).toggleClass('open');
+      $(".megamenu").removeClass("fade_animate")
     }
   );
 });
