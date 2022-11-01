@@ -154,6 +154,32 @@ $('#employeeSlider').owlCarousel({
 })
 
 
+
+$('.testimonial-slider').owlCarousel({
+  loop:false,
+  margin:10,
+  nav:true,
+  navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
+  dots:false,
+  responsive:{
+      0:{
+          items:1,
+          nav:false,
+          dots:true
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
+
+
+
+
+
 $('#employeeSliderTwo').owlCarousel({
   loop: false,
   margin: 20,
@@ -491,12 +517,12 @@ window.onload = calcScrollValue;
 $(document).ready(function () {
   $(".dropdown_hover").hover(
     function () {
-      $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).show();
+      $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn(100);
       $(this).toggleClass('open');
       $(".megamenu").addClass("fade_animate");
     },
     function () {
-      $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).hide();
+      $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeOut(100);
       $(this).toggleClass('open');
       $(".megamenu").removeClass("fade_animate")
     }
@@ -575,7 +601,12 @@ $( window ).resize();
 
 
 
+// apply check option 
 
+$(".apply_option").click(function(){
+  $( ".option_selected" ).html( $( "input:checked" ).val());
+
+});
 
 
 
