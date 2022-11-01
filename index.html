@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 </head>
 
 <body class="body header-fixed">
@@ -121,8 +122,8 @@
                             versions of Lorem Ipsum.
                           </p>
                           <div class="text-center">
-                          <div class="story_read-btn">Learn more</div>
-                        </div>
+                            <div class="story_read-btn">Learn more</div>
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-6 col-12">
@@ -144,8 +145,8 @@
                               </div>
 
                               <div class="text-center">
-                              <div class="story_read-btn">See more</div>
-                            </div>
+                                <div class="story_read-btn">See more</div>
+                              </div>
                             </div>
                           </div>
 
@@ -184,8 +185,8 @@
                             years.
                           </p>
                           <div class="text-center">
-                          <div class="story_read-btn">FAQ</div>
-                        </div>
+                            <div class="story_read-btn">FAQ</div>
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-6 col-12">
@@ -208,8 +209,8 @@
                                 versions of Lorem Ipsum.
                               </p>
                               <div class="text-center">
-                              <div class="story_read-btn">Help</div>
-                            </div>
+                                <div class="story_read-btn">Help</div>
+                              </div>
                             </div>
                           </div>
 
@@ -252,12 +253,14 @@
                                 name="email">
                             </div>
 
+                           
                             <div class="mb-3 contact_submit-section">
-                              <input class="form-check-input me-3" type="checkbox" id="contact" name="" value="">
-                              <button  class="story_read-btn">Contact me</button>
+                              <input class="form-check-input me-3" type="checkbox" id="">
+                              <button class="story_read-btn">Contact me</button>
                             </div>
 
                           </form>
+                          
                         </div>
                       </div>
                     </div>
@@ -288,17 +291,17 @@
 
                           <h6 class="title megamenu_inner_title">Platform status</h6>
                           <form>
-                            <div class="form-check">
+                            <div class="form-check platform_check">
                               <input type="checkbox" class="form-check-input" id="check1" name="option1" value="">
                               <label class="form-check-label" for="check1">OG Scribe Service</label>
                             </div>
-                            <div class="form-check">
+                            <div class="form-check platform_check">
                               <input type="checkbox" class="form-check-input" id="check2" name="option2" value="">
                               <label class="form-check-label" for="check2">OG Power Insights</label>
                             </div>
                             <div class="text-center">
-                            <div class="story_read-btn mt-3">Close</div>
-                          </div>
+                              <div class="story_read-btn mt-3">Close</div>
+                            </div>
                           </form>
                         </div>
                       </div>
@@ -336,41 +339,54 @@
                       <div class="col-lg-6 col-12">
                         <div class="col-megamenu p-4">
                           <h6 class="title megamenu_inner_title">Career opportunities at OG</h6>
-                         
+
                           <div class="opt_container">
-                              <div class="opt_card">
-                                 <h4>Medical scribe</h4>
-                                 <div class="badge_list">
+                            <label class="opt_card" for="medicalScribe">
+                              <input class="apply_option" type="radio" name="career-opportunities" id="medicalScribe"
+                                value="medical scribe" checked />
+                              <div class="opt_card-wrapper">
+                                <h4>Medical scribe</h4>
+                                <div class="badge_list">
                                   <span class="badge bg-success">Trainee</span>
                                   <span class="badge bg-success">English</span>
                                   <span class="badge bg-success">In-office</span>
-                                 </div>
+                                </div>
                               </div>
+                            </label>
 
-                              <div class="opt_card">
+                            <label class="opt_card" for="dataAnalyst">
+                              <input class="apply_option" type="radio" name="career-opportunities" id="dataAnalyst"
+                                value="data analyst" />
+                              <div class="opt_card-wrapper">
                                 <h4>Data analyst</h4>
                                 <div class="badge_list">
-                                 <span class="badge bg-success">Experienced</span>
-                                 <span class="badge bg-success">English</span>
-                                 <span class="badge bg-success">Power BI</span>
-                                 <span class="badge bg-success">Tableau</span>
-                                 <span class="badge bg-success">WFO</span>
+                                  <span class="badge bg-success">Experienced</span>
+                                  <span class="badge bg-success">English</span>
+                                  <span class="badge bg-success">Power BI</span>
+                                  <span class="badge bg-success">Tableau</span>
+                                  <span class="badge bg-success">WFO</span>
                                 </div>
-                             </div>
-
-                             <div class="opt_card">
-                              <h4>Recruitment manager</h4>
-                              <div class="badge_list">
-                               <span class="badge bg-success">Experienced</span>
-                               <span class="badge bg-success">WFO</span>
                               </div>
-                           </div>
+                            </label>
+
+                            <label class="opt_card" for="recruitmentManager">
+                              <input class="apply_option" type="radio" name="career-opportunities"
+                                id="recruitmentManager" value="recruitment manager" />
+                              <div class="opt_card-wrapper">
+                                <h4>Recruitment manager</h4>
+                                <div class="badge_list">
+                                  <span class="badge bg-success">Experienced</span>
+                                  <span class="badge bg-success">WFO</span>
+                                </div>
+                              </div>
+                            </label>
                           </div>
                         </div>
                       </div>
                       <div class="col-lg-6 col-12">
                         <div class="col-megamenu col-megamenu-inner p-4">
-                          <h6 class="title megamenu_inner_title">I want to become a Recruitment manager</h6>
+                          <h6 class="title megamenu_inner_title">I want to become a <span
+                              class="option_selected">medical scribe</span></h6>
                           <div class="megamenu_form px-0 pb-3">
                             <form>
                               <div class="mb-3 mt-3">
@@ -383,18 +399,17 @@
                               </div>
                               <div class="mb-3">
                                 <input type="text" class="form-control" id="pnumber" placeholder="Enter your mobile number
-                                "
-                                  name="pnumber">
+                                " name="pnumber">
                               </div>
-  
+
                               <div class="mb-3 apply_form-section">
                                 <div class="upload_cv story_read-btn-w me-4">
-                                <input type="file" class="upload_btn" />
-                                <span>Upload CV</span>
-                               </div>
+                                  <input type="file" class="upload_btn" />
+                                  <span>Upload CV</span>
+                                </div>
                                 <button class="story_read-btn">Apply</button>
                               </div>
-  
+
                             </form>
                           </div>
                         </div>
@@ -423,6 +438,8 @@
 
   <!-- banner section start  -->
   <section class="banner_section p-0 position-relative">
+    <div class="shape-img10"><img src="assets/img/icons/circle.png" alt="image"></div>
+
     <div class="scroll_down">
       <div class="mouse">
         <span>SCROLL DOWN</span>
@@ -431,7 +448,7 @@
     <div class="owl-carousel owl-theme" id="heroBanner">
 
       <div class="item">
-        <div class="owl-text-overlay " data-aos="fade-up">
+        <div class="owl-text-overlay ">
           <h2 class="owl-title">Become a world-class</h2>
           <h3 class="outline_title">Medical Scribe</h3>
           <div class="banner_btn">
@@ -440,12 +457,12 @@
           </div>
         </div>
         <div class="banner_img-container">
-        <img class="owl-img" src="assets/img/icons/3d-doc-young-bw.png" alt="banner" />
-      </div>
+          <img class="owl-img" src="assets/img/icons/3d-doc.png" alt="banner" />
+        </div>
       </div>
 
       <div class="item">
-        <div class="owl-text-overlay " data-aos="fade-up">
+        <div class="owl-text-overlay ">
           <h2 class="owl-title">Long-term healthcare</h2>
           <h3 class="outline_title">Career</h3>
           <div class="banner_btn">
@@ -454,12 +471,12 @@
           </div>
         </div>
         <div class="banner_img-container">
-        <img class="owl-img" src="assets/img/icons/3d-doc.png" alt="banner" />
-      </div>
+          <img class="owl-img" src="assets/img/icons/3d-doc.png" alt="banner" />
+        </div>
       </div>
 
       <div class="item">
-        <div class="owl-text-overlay " data-aos="fade-up">
+        <div class="owl-text-overlay ">
           <h2 class="owl-title">Be your own</h2>
           <h3 class="outline_title">Boss</h3>
           <div class="banner_btn">
@@ -468,11 +485,27 @@
           </div>
         </div>
         <div class="banner_img-container">
-        <img class="owl-img" src="assets/img/icons/3d-boss-bw.png" alt="banner" />
-      </div>
+          <img class="owl-img" src="assets/img/icons/3d-boss-bw.png" alt="banner" />
+        </div>
       </div>
 
-     
+      <div class="item">
+        <div class="owl-text-overlay ">
+          <h2 class="owl-title">Best-in-class</h2>
+          <h3 class="outline_title">Training</h3>
+          <div class="banner_btn">
+            <a href="#" class="btn-fill me-4">FAQ</a>
+            <a href="#" class="btn-light">EXPLORE</a>
+          </div>
+        </div>
+        <div class="banner_img-container">
+          <img class="owl-img" src="assets/img/icons/3d-training-bw.png" alt="banner" />
+        </div>
+      </div>
+
+
+
+
 
     </div>
   </section>
@@ -481,167 +514,1114 @@
 
 
 
-
-
-  <!-- contact form start  -->
-  <section class="contact_section py-0" id="contactForm">
-    <div class="contact_container">
-      <div class="map_section">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.895754235172!2d77.57802691473633!3d13.042307016851854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17ec36ceee1f%3A0x690c243a5b8c5f19!2sOG%20Healthcare!5e0!3m2!1sen!2sin!4v1663055368006!5m2!1sen!2sin"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" id="googleMap"></iframe>
+  <!-- animation section start  -->
+  <section class="animate_section">
+    <div class="contanier">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="wow fadeInUp">Animation Section</h3>
+        </div>
       </div>
-      <div class="form_section pt-5">
+    </div>
+  </section>
 
-        <h3 class="form_title">Apply Here</h3>
-
-        <form action="">
+  <!-- animation section start end  -->
 
 
-          <div class="form_input_section container-fluid">
-            <div class="row">
 
-              <div class="col-12 col-sm-12">
-                <div class="mb-1 mt-3">
-                  <label for="help">How can we help you?</label>
+  <!-- Empowering start  -->
+  <section class="empowering_section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 m-auto text-center mb-5">
+          <h4 class="section_title wow fadeInUp">PIONEERING VIRTUAL MEDICAL SCRIBES</h4>
+          <h1 class="section_title_content mb-5 wow fadeInUp">
+            Empowering US Physicians</h1>
 
-                  <select name="help" id="" class="d-block w-100">
-                    <option value="" selected disabled>Select one...</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
+          <p class="mb-4 p-content wow fadeInUp">Lorem ipsum dolor
+            sit amet consectetur,
+            adipisicing elit. A sapiente fugiat
+            reiciendis obcaecati
+            repudiandae nobis sequi temporibus dolorem ipsa distinctio explicabo esse, nostrum odit id. Et
+            exercitationem excepturi inventore neque!</p>
+
+          <p class="m-0 p-content wow fadeInUp">Lorem ipsum dolor
+            sit amet consectetur,
+            adipisicing elit. A sapiente fugiat
+            reiciendis obcaecati
+            repudiandae nobis sequi temporibus dolorem ipsa distinctio explicabo esse, nostrum odit id.</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <!-- Empowering end  -->
+
+
+
+  <!-- Long-Term start -->
+  <section class="empowering_section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 m-auto text-center mb-5">
+          <h4 class="section_title wow fadeInUp">WE WORK HARD BUT
+            PLAY HARDER
+          </h4>
+          <h1 class="section_title_content mb-5 wow fadeInUp">
+            Building Long-Term Careers</h1>
+
+          <p class="mb-4 p-content wow fadeInUp">Lorem ipsum dolor
+            sit amet consectetur,
+            adipisicing elit. A sapiente fugiat
+            reiciendis obcaecati
+            repudiandae nobis sequi temporibus dolorem ipsa distinctio explicabo esse, nostrum odit id. Et
+            exercitationem excepturi inventore neque!</p>
+
+          <p class="m-0 p-content wow fadeInUp">Lorem ipsum dolor
+            sit amet consectetur,
+            adipisicing elit. A sapiente fugiat
+            reiciendis obcaecati
+            repudiandae nobis sequi temporibus dolorem ipsa distinctio explicabo esse, nostrum odit id.</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <!-- Long-Term end  -->
+
+
+
+  <!-- Robotic Process start -->
+  <section class="robotic_section py-5 position-relative">
+    <div class="graph-animate wow fadeIn">
+      <img src="assets/img/icons/3d-data-bw.png" alt="graph">
+    </div>
+    <div class="circle_wave ">
+      <div class="wave_box">
+        <div class="sound_loader wow zoomIn">
+          <svg id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 38.05">
+            <title>Audio Wave</title>
+            <path id="Line_1" data-name="Line 1"
+              d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z" />
+            <path id="Line_2" data-name="Line 2"
+              d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z" />
+            <path id="Line_3" data-name="Line 3"
+              d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z" />
+            <path id="Line_4" data-name="Line 4"
+              d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z" />
+            <path id="Line_5" data-name="Line 5"
+              d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z" />
+          </svg>
+        </div>
+        <h3>
+          No wake-words.
+          No dictation.
+          You have to see it to <b>believe it.</b>
+        </h3>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 m-auto text-center mb-5">
+          <h4 class="section_title wow fadeInUp">AUGMENTED HUMAN
+            INTELLIGENCE
+          </h4>
+          <h1 class="section_title_content mb-5 wow fadeInUp">
+            Robotic Process Automation & Data Analytics</h1>
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <!-- Robotic Process end  -->
+
+
+
+
+  <!-- new-compliance section  start-->
+  <section class="new_compliance-section position-relative py-5">
+    <div class="lock_animate">
+      <img src="assets/img/icons/3d-padlock-bw.png" alt="padlock" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 m-auto text-center mb-5">
+          <h4 class="section_title wow fadeInUp">COMPLIANCE MATTERS
+          </h4>
+          <h1 class="section_title_content mb-5 wow fadeInUp">
+            Compliance</h1>
+        </div>
+
+        <div class="col-12">
+          <div class="new_compliance-counter">
+            <div class="counter_card wow fadeInUp">
+              <h4><span>90</span>%</h4>
+              <p>BIS LVL 2</p>
+            </div>
+            <div class="counter_card wow fadeInUp" data-wow-delay=".3s">
+              <h4><span>90</span>%</h4>
+              <p>BIS LVL 2</p>
+            </div>
+            <div class="counter_card wow fadeInUp" data-wow-delay=".6s">
+              <h4><span>90</span>%</h4>
+              <p>BIS LVL 2</p>
+            </div>
+            <div class="counter_card wow fadeInUp" data-wow-delay=".8s">
+              <h4><span>90</span>%</h4>
+              <p>BIS LVL 2</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 mt-4 wow fadeInUp">
+          <ul class="nav nav-tabs compliance_nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#about1">About 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#about2">About 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#about3">About 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#about4">About 4</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content compliance_tab-content">
+            <div id="about1" class="container tab-pane active">
+              <div class="pt-4 compliance_content-tag">
+                <p>About selected compliance metric About selected compliance metric About selected compliance metric
+                  About
+                  selected compliance metric About selected compliance metric About selected compliance metric About
+                  selected compliance metric About selected compliance metric v About selected compliance metric About
+                  selected compliance metric About selected compliance metric.</p>
+              </div>
+            </div>
+            <div id="about2" class="container tab-pane fade">
+              <div class="pt-4 compliance_content-tag">
+                <p>About selected compliance metric About selected compliance metric About selected compliance metric
+                  About
+                  selected compliance metric About selected compliance metric About selected compliance metric About
+                  selected compliance metric About selected compliance metric v About selected compliance metric About
+                  selected compliance metric About selected compliance metric.</p>
+              </div>
+            </div>
+            <div id="about3" class="container tab-pane fade">
+              <div class="pt-4 compliance_content-tag">
+                <p>About selected compliance metric About selected compliance metric About selected compliance metric
+                  About
+                  selected compliance metric About selected compliance metric About selected compliance metric About
+                  selected compliance metric About selected compliance metric v About selected compliance metric About
+                  selected compliance metric About selected compliance metric.</p>
+              </div>
+            </div>
+            <div id="about4" class="container tab-pane fade">
+              <div class="pt-4 compliance_content-tag">
+                <p>About selected compliance metric About selected compliance metric About selected compliance metric
+                  About
+                  selected compliance metric About selected compliance metric About selected compliance metric About
+                  selected compliance metric About selected compliance metric v About selected compliance metric About
+                  selected compliance metric About selected compliance metric.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mt-4 text-center">
+          <button class="con_compliance-btn wow fadeInUp">
+            Contact<br />Compliance
+          </button>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- new-compliance section  end-->
+
+
+
+
+
+  <!-- TESTIMONIALS section start  -->
+
+  <section class="new_testimonial-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 m-auto text-center mb-5">
+          <h4 class="section_title wow fadeInUp">DON’T TAKE OUR WORD
+            FOR IT</h4>
+          <h1 class="section_title_content mb-5 wow fadeInUp" data-wow-delay="5s">
+            TESTIMONIALS</h1>
+        </div>
+
+
+        <div class="col-12">
+          <div class="new_testimonial-slider">
+            <div class="owl-carousel owl-theme testimonial-slider wow fadeInUp" data-wow-delay="5s">
+
+              <div class="item text-center">
+                <div class="chat-bubble">
+                  <div class="shape_quotes"><img src="assets/img/double-quotes.svg" alt="quotes"></div>
+                  <p class="m-0">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos corporis natus, aperiam quae animi, consequatur cupiditate, placeat tempore rerum minima laudantium porro cumque magnam consectetur officia? Quas, veniam fuga.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos corporis natus, aperiam quae animi, consequatur cupiditate, placeat tempore rerum minima laudantium porro cumque magnam consectetur officia? Quas, veniam fuga.
+                  </p>
                 </div>
               </div>
 
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname" placeholder="Enter First name" name="fname">
+              <div class="item text-center">
+                <div class="chat-bubble">
+                  <div class="shape_quotes"><img src="assets/img/double-quotes.svg" alt="quotes"></div>
+                  <p class="m-0">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos corporis natus, aperiam quae animi, consequatur cupiditate, placeat tempore rerum minima laudantium porro cumque magnam consectetur officia? Quas, veniam fuga.
+                  </p>
                 </div>
               </div>
 
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="lname">Last name:</label>
-                  <input type="text" class="form-control" id="lname" placeholder="Last name" name="lname">
-                </div>
-              </div>
 
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="email">Email:</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="pnumber">Phone Number:</label>
-                  <input type="number" class="form-control" id="pnumber" placeholder="Enter Phone Number"
-                    name="pnumber">
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="company">Company Name:</label>
-                  <input type="text" class="form-control" id="company" placeholder="Enter Company Name" name="company">
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="providers">Total Number of Providers:</label>
-                  <input type="number" class="form-control" id="providers" placeholder="Enter Providers Count"
-                    name="providers">
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="role">Your role?</label>
-                  <select name="role" id="" class="d-block w-100">
-                    <option value="" selected disabled>Select one...</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="speciality">Speciality:</label>
-                  <select name="speciality" id="" class="d-block w-100">
-                    <option value="" selected disabled>Select one...</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="ehr">Which EHR vendor do you use:</label>
-                  <select name="ehr" id="" class="d-block w-100">
-                    <option value="" selected disabled>Select one...</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="mb-1 mt-3">
-                  <label for="location">Location:</label>
-                  <select name="location" id="" class="d-block w-100">
-                    <option value="" selected disabled>Choose Location</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
+              <div class="item text-center">
+                <div class="chat-bubble">
+                  <div class="shape_quotes"><img src="assets/img/double-quotes.svg" alt="quotes"></div>
+                  <p class="m-0">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos corporis natus, aperiam quae animi, consequatur cupiditate, placeat tempore rerum minima laudantium porro cumque magnam consectetur officia? Quas, veniam fuga.
+                  </p>
                 </div>
               </div>
 
             </div>
           </div>
+        </div>
+
+        <div class="col-12 text-center wow fadeInUp">
+          <button class="testimonial-btn">
+            FEEDBACK
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-          <div class="form_footer">
-            <ul class="social_media">
-              <li>
-                <a href="">
-                  <img src="assets/images/twitter.svg" alt="twitter">
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="assets/images/facebook-f.svg" alt="facebook">
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="assets/images/instagram.svg" alt="instagram">
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="assets/images/linkedin-in.svg" alt="linkedin">
-                </a>
-              </li>
-            </ul>
 
-            <button type="submit" class="btn btn-primary form_apply">Apply Here</button>
+  <!-- TESTIMONIALS section end  -->
+
+
+
+  <!-- Calculator section start  -->
+  <section class="tools_section position-relative py-5">
+
+<div class="calculator_animate-1">
+  <img src="assets/img/icons/3d-calculator-bw.png" alt="calculator" />
+</div>
+
+<div class="calculator_animate-2">
+  <img src="assets/img/icons/3d-clock-bw.png" alt="clock" />
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5 wow fadeInUp">
+          <h4 class="section_title wow fadeInUp">SAY GOODBYE TO PHYSICIAN BURNOUT</h4>
+          <h1 class="section_title_content wow fadeInUp">OG Healthcare saves <span class="text-span">3 hours</span> a day
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="row mb-4">
+        <div class="col-12">
+           <div class="average_list">
+              <div class="average_box wow fadeInUp" data-wow-delay=".3s">
+                <p>How many patients do you see a day?</p>
+                <div class="average_value">20</div>
+              </div>
+              <div class="average_box wow fadeInUp" data-wow-delay=".6s">
+                <p>Average consultation charge?</p>
+                <div class="average_value">182</div>
+              </div>
+              <div class="average_box wow fadeInUp" data-wow-delay=".8s">
+                <p>Average consultation time?</p>
+                <div class="average_value">30</div>
+              </div>  
+           </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="text-thin wow fadeInUp">What you could do with these extra hours</h3>
+        </div>
+        <div class="col-12">
+          <div class="progress_line">
+            <div class="range-slider wow fadeInUp" data-wow-delay=".2s">
+              <input class="range-slider__range" type="range" value="250" min="0" max="500">
+              <!-- <span class="range-slider__value">0</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool_progress position-relative wow fadeInUp">
+
+      <div class="tool_progress_content">
+        <div class="progress_content_part wow fadeInUp">
+          <div class="head_point mb-4">
+            <span class="color-theme-sm fw-bold">1.5</span> <span>more hours on</span> <span class="fw-bold">Work</span> per day
+          </div>
+          <ul class="list_point">
+            <li>See <span class="color-theme-sm fw-bold inner_count-val">3</span> more patients</li>
+            <li>Spend <span class="color-theme-sm fw-bold inner_count-val">6</span> more minutes with each patient</li>
+            <li>Make <span class="color-theme-sm fw-bold inner_count-val">$182</span> more revenue</li>
+          </ul>
+        </div>
+
+        <div class="progress_content_part wow fadeInUp">
+          <div class="head_point mb-4">
+            <span class="color-theme-sm fw-bold">1</span> <span>more hours on</span> <span class="fw-bold">Life</span> per day
+          </div>
+          <ul class="list_point">
+            <li>Go home <span class="color-theme-sm fw-bold inner_count-val">1.5</span> hours earlier</li>
+            <li>Spend <span class="color-theme-sm fw-bold inner_count-val">1.5</span> more hours with your family</li>
+            <li>Go home <span class="color-theme-sm fw-bold inner_count-val">1.5</span> more minutes on your interests</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="" class="testimonial-btn wow fadeInUp">FREE TRIAL</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator section end  -->
+
+
+
+
+
+
+
+  <!-- Class Training section start  -->
+  <section class="horizontal_section py-5 position-relative blue">
+   
+    <div class="training_animate">
+   <img src="assets/img/icons/3d-graduate-bw.png" alt="graduate" />
+    </div>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="section_title wow fadeInUp">SAY HELLO TO YOUR HEALTHCARE CAREER</h4>
+          <h1 class="section_title_content wow fadeInUp">Best-in-Class Training</h1>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="swiper-container slider horizontal-swiper position-relative mt-5 swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+      <div class="swiper-wrapper" id="swiper-wrapper-2d10a92103cef49e44" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-1209.75px, 0px, 0px);">
+        <div class="swiper-slide" role="group" aria-label="1 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">January 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+        <div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">February 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">March 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+        <div class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">April 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="5 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">May 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="6 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">June 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="7 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">July 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="8 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">August 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="9 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">September 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="10 / 10" style="width: 776.5px; margin-right: 30px;">
+          <h1 class="year_title">October 2022</h1>
+          <p class="year_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis cupiditate sunt nulla, ea
+            repellat voluptatum nemo sint minus voluptatem obcaecati facere omnis minima error perspiciatis id nesciunt
+            molestias repudiandae.</p>
+        </div>
+
+      </div>
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 10"></span></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mt-5">
+        <a href="" class="testimonial-btn wow fadeInUp">APPLY HERE</a>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+
+
+<!-- Class Training section end  -->
+
+
+
+
+<!-- faq section start  -->
+<section class="faq_section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5 wow fadeInUp">
+        <h4 class="section_title">CONFUSED? DON'T BE, WE'VE BEEN DOING THIS FOR 22 YEARS</h4>
+        <h1 class="section_title_content">Frequently Asked Questions</h1>
+      </div>
+      <div class="col-12 mt-5">
+
+        <div class="tab_section">
+          <!-- tab list  -->
+          <ul class="nav nav-tabs nav_tabs wow fadeInUp" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" data-bs-toggle="tab" href="#applicants" aria-selected="true" role="tab">For applicants</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" data-bs-toggle="tab" href="#clients" aria-selected="false" tabindex="-1" role="tab">For clients</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" data-bs-toggle="tab" href="#others" aria-selected="false" tabindex="-1" role="tab">For others</a>
+            </li>
+          </ul>
+
+
+
+          <!-- Tab panes -->
+          <div class="tab-content tab_content wow fadeInUp">
+            <!-- tab 1 start  -->
+            <div id="applicants" class="container tab-pane active" role="tabpanel">
+              <div id="accordionOne" class="accordion_collapse">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#applicantOne">
+                      What procedures will I have in the Emergency Department?
+                    </a>
+                  </div>
+                  <div id="applicantOne" class="collapse show" data-bs-parent="#accordionOne">
+                    <div class="card-body pt-0">
+                      Treatments and procedures may include lab work, radiological studies, CAT scans, ultrasound, EKG for cardiac review, medication administration and physician evaluations.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#applicantTwo">
+                      When will I see a physician?
+                    </a>
+                  </div>
+                  <div id="applicantTwo" class="collapse" data-bs-parent="#accordionOne">
+                    <div class="card-body pt-0">
+                      All patients are first triaged by an ER nurse. Then patients are evaluated by a physician. Patients who have a higher acuity of illness (i.e. heart attack or stroke) may be treated before those patients with less severe conditions (laceration, sprained ankle, etc.). Your patience is always appreciated.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#applicantThree">
+                      When will I be able to eat?
+                    </a>
+                  </div>
+                  <div id="applicantThree" class="collapse" data-bs-parent="#accordionOne">
+                    <div class="card-body pt-0">
+                      Patients are able to eat after all their tests are completed and the physician has evaluated the results. On average, it is within three to four hours. However, it is sometimes necessary for patients to remain "NPO" (nothing by mouth) until further tests and/or studies are completed.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!-- tab 1 end  -->
+
+
+
+
+            <!-- tab 2 start  -->
+            <div id="clients" class="container tab-pane fade" role="tabpanel">
+              <div id="accordionTwo" class="accordion_collapse">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#clientOne">
+                      When will I receive my pain medication?
+                    </a>
+                  </div>
+                  <div id="clientOne" class="collapse show" data-bs-parent="#accordionTwo">
+                    <div class="card-body pt-0">
+                      Because pain medication can mask important clues to your medical condition, it may not be given until tests are completed and the physician has evaluated the results. However, treatment for pain is important so please let your nurse or physician know when you are experiencing pain or if there is no relief from the medication that was prescribed. You will be asked to rate your pain throughout your stay in our department and, if admitted, on our medical floors.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#clientTwo">
+                      How is the Emergency Department staffed?
+                    </a>
+                  </div>
+                  <div id="clientTwo" class="collapse" data-bs-parent="#accordionTwo">
+                    <div class="card-body pt-0">
+                      The department is staffed with emergency medicine physicians and nurses, physician assistants, technicians, CNAs and unit coordinators along with specialists from the laboratory, cardiology, respiratory and radiology departments.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#clientThree">
+                      What happens if I am admitted?
+                    </a>
+                  </div>
+                  <div id="clientThree" class="collapse" data-bs-parent="#accordionTwo">
+                    <div class="card-body pt-0">
+                      Upon admission to the hospital, you will remain in the Emergency Department until your inpatient room is ready. Your admitting physician will visit you during their designated "patient rounds."
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab 2 end  -->
+
+
+
+            <!-- tab 3 start  -->
+            <div id="others" class="container tab-pane fade" role="tabpanel">
+              <div id="accordionThree" class="accordion_collapse">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#otherOne">
+                      What laundry services are available?
+                    </a>
+                  </div>
+                  <div id="otherOne" class="collapse show" data-bs-parent="#accordionThree">
+                    <div class="card-body pt-0">
+                      Laundry services are available at the hospital, although family members are encouraged to launder patients' clothing. There are washers and dryers on the units for you and your family members to use.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#otherTwo">
+                      Should I keep my own medications with me?
+                    </a>
+                  </div>
+                  <div id="otherTwo" class="collapse" data-bs-parent="#accordionThree">
+                    <div class="card-body pt-0">
+                      All medications ordered by your physician are provided by HFSC and distributed by your nurse. Please speak with your nurse if you have any questions.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#otherThree">
+                      How often is mail delivered?
+                    </a>
+                  </div>
+                  <div id="otherThree" class="collapse" data-bs-parent="#accordionThree">
+                    <div class="card-body pt-0">
+                      Mail is distributed daily, except Sunday. Email availability may be arranged through your team.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab 3 end  -->
+
+
+
           </div>
 
 
 
-        </form>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- faq section end  -->
+
+
+
+
+<!-- blog filter section start  -->
+<section class="blog_section py-4">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="blog_slider">
+        <nav class="owl-filter-bar wow fadeInUp">
+          <a href="javascript:void(0)" class="item tab_item-link active" data-owl-filter="*">All</a>
+          <a href="javascript:void(0)" class="item tab_item-link" data-owl-filter=".blog">Blog</a>
+          <a href="javascript:void(0)" class="item tab_item-link" data-owl-filter=".help">Help</a>
+          <a href="javascript:void(0)" class="item tab_item-link" data-owl-filter=".job">Job</a>
+      </nav>
+      
+      <div class="owl-carousel owl-theme blog-filter wow fadeInUp">
+          <div class="item blog">
+            <div class="employee_card position-relative">
+            <div class="tab_item-title">
+            <h4>Blog</h4>
+            </div>
+              <div class="header_img">
+                <img src="assets/img/banner_1.webp" alt="profile">
+              </div>
+              <div class="em_name">
+                Lorem, ipsum dolor
+              </div>
+              <div class="em_detail">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="em_update justify-content-center">
+              <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+              </div>
+            </div>
+          </div>
+
+          <div class="item blog">
+            <div class="item blog">
+              <div class="employee_card position-relative">
+              <div class="tab_item-title">
+              <h4>Blog</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_2.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item help">
+            <div class="item blog">
+              <div class="employee_card position-relative">
+              <div class="tab_item-title">
+              <h4>Help</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_3.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item job">
+            <div class="item blog">
+              <div class="employee_card position-relative">
+              <div class="tab_item-title">
+              <h4>Job</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_1.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item job">
+            <div class="item blog">
+              <div class="employee_card position-relative">
+              <div class="tab_item-title">
+              <h4>Job</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_2.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item blog">
+            <div class="item blog">
+              <div class="employee_card position-relative" data-aos="fade-up">
+              <div class="tab_item-title">
+              <h4>Blog</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_3.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item job">
+            <div class="item blog">
+              <div class="employee_card aos-init aos-animate position-relative" data-aos="fade-up">
+              <div class="tab_item-title">
+              <h4>Job</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_1.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item job">
+            <div class="item blog">
+              <div class="employee_card aos-init aos-animate position-relative" data-aos="fade-up">
+              <div class="tab_item-title">
+              <h4>Job</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_2.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item help">
+            <div class="item blog">
+              <div class="employee_card aos-init aos-animate position-relative" data-aos="fade-up">
+              <div class="tab_item-title">
+              <h4>Help</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_3.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item job">
+            <div class="item blog">
+              <div class="employee_card aos-init aos-animate position-relative" data-aos="fade-up">
+              <div class="tab_item-title">
+              <h4>Job</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_1.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item help">
+            <div class="item blog">
+              <div class="employee_card aos-init aos-animate position-relative" data-aos="fade-up">
+              <div class="tab_item-title">
+              <h4>Help</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_2.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item help">
+            <div class="item blog">
+              <div class="employee_card aos-init aos-animate position-relative" data-aos="fade-up">
+              <div class="tab_item-title">
+              <h4>Help</h4>
+              </div>
+                <div class="header_img">
+                  <img src="assets/img/banner_3.webp" alt="profile">
+                </div>
+                <div class="em_name">
+                  Lorem, ipsum dolor
+                </div>
+                <div class="em_detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="em_update justify-content-center">
+                <a href="javascript:void(0)" class="blog_read-btn">Read</a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- blog filter section end  -->
+
+
+
+
+
+
+
+
+<!-- Mailing List section start  -->
+<section class="mail_subscribe py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="mail_subscribe-card wow fadeInUp">
+
+          <div class="mail_subscribe-title">
+            <span class="left_border-line"></span>
+            <h3>Mailing List</h3>  
+          </div>
+
+          <div class="mail_subscribe-form">
+            <form>
+              <div class="mail_subscribe-input">
+                <input type="text" placeholder="Enter Your Mail ID" />
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mailing List section end  -->
+
+
+
+  <!-- contact form start  -->
+  <section class="contact_section py-5 position-relative">
+    <div class="location_animate">
+      <img src="assets/img/icons/3d-location-bw.png" alt="location" />
+    </div>
+    <div class="container">
+     <div class="row">
+      <div class="col-12">
+          <div class="foot_contact-section wow fadeInUp">
+  <div class="map_section">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.895754235172!2d77.57802691473633!3d13.042307016851854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17ec36ceee1f%3A0x690c243a5b8c5f19!2sOG%20Healthcare!5e0!3m2!1sen!2sin!4v1663055368006!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" id="googleMap"></iframe>
+      </div>
+
+      <div class="contact_form-card px-4 py-2">
+        <div class="col-megamenu">
+          <h6 class="title megamenu_inner_title px-3">We’d love to hear from you</h6>
+          <div class="megamenu_form px-3 pb-3">
+            <form>
+              <div class="mb-3 mt-3">
+                <label for="">I am looking …</label>
+                <select name="" id="" class="form-control">
+                  <option value="" selected="" disabled="">… for a scribe</option>
+                  <option value="">Select One</option>
+                  <option value="">Select Two</option>
+                </select>
+                <!-- <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name"> -->
+              </div>
+              <div class="mb-3 mt-3">
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+              </div>
+
+             
+              <div class="mb-3 contact_submit-section">
+                <input class="form-check-input me-3" type="checkbox" id="">
+                <button class="story_read-btn">Contact me</button>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+          </div>
+      </div>
+
+
+<div class="col-12">
+  <div class="contact_detail-section">
+      <div class="contact_detail-col text-center wow fadeInUp">
+        <i class="fas fa-phone-alt"></i>
+        <div class="contact_link ">
+            <a href="tel:1234567890" class="d-block">1234567890</a>
+            <a href="tel:1234567890" class="d-block">1234567890</a>
+        </div>
+      </div>
+      <div class="contact_detail-col text-center wow fadeInUp" data-wow-delay=".3s">
+        <i class="fas fa-envelope"></i>
+        <div class="contact_link">
+            <a href="mailto:example@gmail.com" class="d-block">example@gmail.com</a>
+            <a href="mailto:example@gmail.com" class="d-block">example@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact_detail-col text-center wow fadeInUp" data-wow-delay=".6s">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="contact_link">
+            <a href="#">
+              27/A, Bhoopasandra Main Rd, Bhoopasandra, Sanjayanagara, Bengaluru, Karnataka 560094
+            </a>
+           
+        </div>
+      </div>
+  </div>
+</div>
+
+     </div>
+
     </div>
   </section>
   <!-- contact form end  -->
@@ -652,38 +1632,40 @@
   <footer class="footer_section pb-0">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col wow fadeInUp" data-wow-delay=".3s">
           <div class="footer_logo">
-            <img src="assets/images/og-logo.webp" alt="footer logo">
+            <img src="assets/img/og-logo.png" alt="footer logo">
+            <h5 class="color-theme-sm">Augmented Human Intelligence</h5>
           </div>
         </div>
-        <div class="col">
-          <h4 class="sitemap_title">Careers</h4>
+        <div class="col wow fadeInUp" data-wow-delay=".4s">
+          <h4 class="sitemap_title">Company</h4>
           <ul class="sitemap_link">
             <li><a href="">About</a> </li>
             <li><a href="">Medical Scribing</a> </li>
-            <li><a href="">Open Positions</a> </li>
-            <li><a href="">Career Path Calculator</a> </li>
-            <li><a href="">FAQ</a> </li>
-            <li><a href="">Diversity & Inclusivity</a> </li>
+            <li><a href="">Other Services</a> </li>
+            <li><a href="">Technology</a> </li>
+            <li><a href="">Compliance</a> </li>
+            <li><a href="">Testimonials</a> </li>
           </ul>
-          <a href="" class="footer_apply">Apply Here</a>
+          <!-- <a href="" class="footer_apply">Apply Here</a> -->
         </div>
-        <div class="col">
+        <div class="col wow fadeInUp" data-wow-delay=".5s">
           <h4 class="sitemap_title">Tools</h4>
           <ul class="sitemap_link">
-            <li><a href="">Calculator</a> </li>
+            <li><a href="">ROI Calc</a> </li>
+            <li><a href="">Training Calc</a> </li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col wow fadeInUp" data-wow-delay=".6s">
           <h4 class="sitemap_title">Useful links</h4>
           <ul class="sitemap_link">
-            <li><a href="">Company</a> </li>
-            <li><a href="">Life</a> </li>
-            <li><a href="">Blog</a> </li>
+            <li><a href="">Careers</a> </li>
+            <li><a href="">FAQ</a> </li>
+            <li><a href="">Library</a> </li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col wow fadeInUp" data-wow-delay=".7s">
           <h4 class="sitemap_title">Legal</h4>
           <ul class="sitemap_link">
             <li><a href="">Privacy Policy</a> </li>
@@ -758,30 +1740,26 @@
     </div>
     <div class="fixed_faq-container">
       <div class="fixed_faq-header d-flex align-items-center justify-content-between ">
-        <h2 class="m-0">OG Healthcare Help</h2>
         <div class="faq_close"><i class="fas fa-times"></i></div>
       </div>
       <div class="fixed_faq-body">
         <div class="support_col">
           <ul class="nav nav-tabs fixed_faq-tab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" data-bs-toggle="tab" href="#support">Support links</a>
+              <a class="nav-link active" data-bs-toggle="tab" href="#faq">FAQs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#faq">FAQs</a>
+              <a class="nav-link " data-bs-toggle="tab" href="#support">Support links</a>
             </li>
+
           </ul>
 
+
+
+
+
           <div class="tab-content">
-            <div id="support" class="container tab-pane active">
-              <p class="support_link my-4">
-                <a href="tel:">
-                  <span class="d-block">Telephone Numbers</span>
-                  <span class="call_link">Call OG Healthcare Customer Support</span>
-                </a>
-              </p>
-            </div>
-            <div id="faq" class="container tab-pane fade">
+            <div id="faq" class="container tab-pane active ">
 
               <div class="my-4">
                 <form>
@@ -800,6 +1778,16 @@
                 </form>
               </div>
             </div>
+
+            <div id="support" class="container tab-pane fade">
+              <p class="support_link my-4">
+                <a href="tel:">
+                  <span class="d-block">Telephone Numbers</span>
+                  <span class="call_link">Call OG Healthcare Customer Support</span>
+                </a>
+              </p>
+            </div>
+
           </div>
 
         </div>
@@ -815,10 +1803,97 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/owlcarousel2-filter.min.js"></script>
   <script src="assets/js/aos.js"></script>
-  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/switchmode.js"></script>
+  <script>
+    // career swiper scroll 
+    new WOW().init();
+var slider1 = new Swiper('.slider', {
+  slidesPerView: 2,
+  centeredSlides: true,
+  paginationClickable: true,
+  loop: false,
+  spaceBetween: 30,
+  slideToClickedSlide: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  breakpoints: {
+// when window width is >= 320px
+0: {
+  slidesPerView: 1,
+  spaceBetween: 30
+},
+// when window width is >= 480px
+480: {
+  slidesPerView: 1,
+  spaceBetween: 30
+},
+// when window width is >= 640px
+640: {
+ 
+}
+}
+});
+
+  
+  </script>
+
+
+
+
+<!-- blog filter  -->
+<script>
+  var owl = $('.blog-filter').owlCarousel({
+   loop:false,
+   margin:30,
+   nav:true,
+   navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
+   dots: true,
+   responsive:{
+       0:{
+           items:1,
+           dots: false,
+       },
+       600:{
+           items:3
+       },
+       1000:{
+           items:3
+       }
+   }
+});
+
+
+// owl.owlcarousel2_filter( '.blue' );
+
+$( '.owl-filter-bar' ).on( 'click', '.item', function() {
+
+var $item = $(this);
+var filter = $item.data( 'owl-filter' )
+
+owl.owlcarousel2_filter( filter );
+
+} );
+
+
+
+var activeNavItem = $('.tab_item-link');
+
+activeNavItem.click(function(){
+  activeNavItem.removeClass('active');
+  $(this).addClass('active');  
+});
+  </script>
+
 
 </body>
 
