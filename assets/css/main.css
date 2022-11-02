@@ -66,7 +66,7 @@
     --primary-color23: #ffffff;
     --primary-color24: #ffffff;
     --primary-color25: #EFEBFB;
-    --primary-color26: #EFEBFB;
+    --primary-color26: #000000;
     --primary-color27: #EFEBFB;
     --primary-color28: #5E5E5E;
     --primary-color29: #ffffff;
@@ -225,8 +225,12 @@ a {
 	transform: translateX(-100%);
 } */
 .theme_mode {
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .theme_mode img {
@@ -467,13 +471,19 @@ a {
 .contact_submit-section input{
     width: 20px;
     height: 20px !important;
+    cursor: pointer;
 }
-.contact_submit-section input:checked, .contact_submit-section input:focus, .contact_submit-section input:active{
+.contact_submit-section input:checked{
     background-color: #531B93;
 }
 .megamenu_form input, .megamenu_form select {
     padding: 8px 10px !important;
     height: 46px;
+}
+.megamenu_form select{
+    background: url("../img/icons/br_down.webp") no-repeat right;
+    -webkit-appearance: none;
+    background-position-x: 98%;
 }
 .nav-link-icon{
     width: 60px;
@@ -4439,6 +4449,10 @@ padding-top: 4rem;
 
 /* responsive  */
 @media screen and (max-width:768px) {
+    .average_box p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
     .foot_contact-section {
         flex-direction: column;
     }
@@ -4461,7 +4475,7 @@ padding-top: 4rem;
         flex-direction: column;
     }
     .calculator_animate-1 {
-        left: -20%;
+        left: -30%;
         top: 16%;
     }
 
@@ -4499,15 +4513,17 @@ padding-top: 4rem;
     #owl-banner .owl-text-overlay,
 #heroBanner .owl-text-overlay {
     bottom: auto;
-    top: 20%;
-    padding: 0px 3rem;
+    top: 26%;
+    padding: 0px 1rem;
     left: 0;
 }
 .banner_img-container{
     bottom: 30%;
     top: auto;
     right: 0;
-    width: 50%;
+    left: 0;
+    width: 40%;
+    margin: 0 auto;
     height: auto;
     border: 5px dashed #531b938c;
     border-radius: 30px;
@@ -4938,11 +4954,11 @@ padding-top: 4rem;
         /* height: calc(100vh - 124px);
         overflow: hidden; */
     }
-    .theme_mode {
+    /* .theme_mode {
         position: absolute !important;
         right: 45px;
         top: 8px;
-    }
+    } */
 
     .subscribe_section {
         padding: 70px 20px;
@@ -5053,10 +5069,10 @@ padding-top: 4rem;
     } */
     #main_nav {
         padding-bottom: 10px;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 66px);
         overflow-y: auto;
         position: fixed;
-        top: 85px;
+        top: 66px;
         background: var(--primary-color2);
         width: 100%;
         right: -100%;
@@ -5091,10 +5107,10 @@ padding-top: 4rem;
         box-shadow: none !important;
     }
 
-    .theme_mode {
+    /* .theme_mode {
         margin-right: 0px;
         margin-left: 10px;
-    }
+    } */
 
     .theme_mode label:after {
         content: '';
@@ -5215,8 +5231,14 @@ padding-top: 4rem;
 
 
 @media screen and (max-width:1200px) {
+    .dropdown-toggle-arrow::after{
+        display: none;
+    }
     .chart_container{
         flex-direction: column;
+    }
+    .navbar .nav-item{
+        width: 100%;
     }
     .chart_container {
         width: 100%;
@@ -5272,6 +5294,8 @@ padding-top: 4rem;
     .tool_left_img, .tool_right_img {
         top: -150px;
     }
+
+
     .header_logo {
         padding-top: 8px;
     }
@@ -5280,10 +5304,10 @@ padding-top: 4rem;
 }
     #main_nav {
         padding-bottom: 10px;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 75px);
         overflow-y: auto;
         position: fixed;
-        top: 90px;
+        top: 70px;
         background: var(--primary-color2);
         width: 100%;
         right: -100%;
@@ -5302,10 +5326,10 @@ padding-top: 4rem;
     }
     #main_nav {
         padding-bottom: 10px;
-        height: calc(100vh - 96px);
+        height: calc(100vh - 72px);
         overflow-y: auto;
         position: fixed;
-        top: 92px;
+        top: 60px;
         background: var(--primary-color2);
         width: 100%;
         right: -100%;
@@ -5352,6 +5376,40 @@ padding-top: 4rem;
         height: auto;
     }
 }
+
+
+@media (min-width:550px) and (max-width:768px){
+    #owl-banner .owl-text-overlay, #heroBanner .owl-text-overlay {
+        top: 36% !important;
+    }
+    .banner_img-container {
+        top: 23% !important;
+        bottom: auto !important;
+        right: 8% !important;
+        left: auto !important;
+        width: 30% !important;
+    }
+}
+
+
+@media(max-width:420px){
+    .banner_img-container {
+        width: 50% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
