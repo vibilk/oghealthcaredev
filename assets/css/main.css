@@ -5149,6 +5149,10 @@ padding-top: 4rem;
     #header_section .navbar-brand {
         padding-bottom: 0;
     }
+    .wave_box:after{
+        -webkit-animation: unset;
+    animation: unset;
+    }
     #header_section .navbar-brand img{
         width: 60px;
     }
