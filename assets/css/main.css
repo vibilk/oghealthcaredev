@@ -5147,7 +5147,7 @@ padding-top: 4rem;
         width: 60px;
     }
     #main_nav{
-        top: 45px !important;
+        top: 41px !important;
     }
     .story_container {
         row-gap: 8px;
@@ -5275,7 +5275,7 @@ padding-top: 4rem;
     } */
     #main_nav {
         padding-bottom: 10px;
-        height: calc(100vh - 66px);
+        height: calc(100vh - 63px);
         overflow-y: auto;
         position: fixed;
         top: 66px;
