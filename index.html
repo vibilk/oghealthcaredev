@@ -36,8 +36,21 @@
               class="header_logo" /> </a>
           <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
             aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars menu_icon"></i>
+            <!-- <i class="fas fa-bars menu_icon"></i> -->
+            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+              <path
+                    class="line top"
+                    d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+              <path
+                    class="line middle"
+                    d="m 70,50 h -40" />
+              <path
+                    class="line bottom"
+                    d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+                    <!-- <text x="30" y="90" fill="#000" style="font-size: 14px;font-weight: 600;">MENU</text> -->
+                  </svg> 
           </button>
+          
           <div class="collapse navbar-collapse  justify-content-start" id="main_nav">
             <ul class="navbar-nav">
               <li class="nav-item active"> <a class="nav-link active inner_nav_link" href="#">Home </a> </li>
@@ -273,10 +286,11 @@
               <!-- Contact Us menu end  -->
 
               <!-- alert start  -->
-              <li class="nav-item dropdown has-megamenu dropdown_hover">
-                <a class="nav-link dropdown-toggle-arrow nav-link-icon alert_icon" href="javascript:void(0)"> <i
-                    class="fas fa-exclamation"></i> </a>
-                <div class="dropdown-menu megamenu megamenu_sm-2 " role="menu">
+              <li class="nav-item dropdown has-megamenu dropdown_hover mobile_icon-pos">
+                <a class="nav-link dropdown-toggle-arrow nav-link-icon alert_icon" href="javascript:void(0)"> 
+                  <i class="fas fa-exclamation"></i> 
+                </a>
+                <div class="dropdown-menu megamenu megamenu_sm-2" role="menu">
                   <div class="row g-3">
                     <div class="col-12">
                       <div class="col-megamenu">
@@ -315,7 +329,7 @@
               <!-- alert end  -->
 
               <!-- theme mode start  -->
-              <li class="nav-item">
+              <li class="nav-item mobile_icon-pos">
                 <a class="nav-link inner_nav_link nav-link-icon theme_link" href="javascript:void(0)">
                   <div class="theme_mode d-flex">
                     <input type="checkbox" id="switch" onclick="switchTheme()" class="theme_check" />
@@ -329,7 +343,7 @@
 
 
               <!-- Apply Here start  -->
-              <li class="nav-item dropdown has-megamenu dropdown_hover">
+              <li class="nav-item dropdown has-megamenu dropdown_hover ">
                 <a class="nav-link dropdown-toggle-arrow p-0" href="javascript:void(0)">
                   <div class="apply_btn inner_nav_link">Apply Here</div>
                 </a>
@@ -421,6 +435,7 @@
                   </div>
                 </div>
               </li>
+              
               <!-- Apply Here end  -->
 
             </ul>
