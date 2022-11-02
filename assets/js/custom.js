@@ -577,10 +577,10 @@ $(document).ready(function(){
   $(".menu_icon").click(function(){
     $("html").toggleClass("body_hidden");
   });
-  $(".inner_nav_link").click(function(){
-    $(".navbar-collapse").removeClass("show");
-    $("html").removeClass("body_hidden");
-  });
+  // $(".inner_nav_link").click(function(){
+  //   $(".navbar-collapse").removeClass("show");
+  //   $("html").removeClass("body_hidden");
+  // });
 });
 
 
@@ -588,11 +588,13 @@ $(document).ready(function(){
 // media query 
 $( window ).resize( function() {
   if ( window.matchMedia( '(max-width:1199px)' ).matches ) {
-    $(".has-megamenu").removeClass('dropdown_hover');
+    // $(".has-megamenu").removeClass('dropdown_hover');
     
-  } else if ( window.matchMedia( '(max-width:991px)'.matches ) ) {
+  } 
+  // else if ( window.matchMedia( '(max-width:1200px)'.matches ) ) {
    
-  } else {
+  // } 
+  else {
     
   }
 
