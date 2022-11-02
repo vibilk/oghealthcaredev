@@ -4642,6 +4642,12 @@ padding-top: 4rem;
 
 /* responsive  */
 @media screen and (max-width:768px) {
+    .contact_detail-section {
+        flex-direction: column;
+    }
+    .contact_detail-section .contact_detail-col {
+        width: 100%;
+    }
     .average_box p {
         font-size: 18px;
         margin-bottom: 10px;
@@ -5604,6 +5610,41 @@ padding-top: 4rem;
 @media(max-width:420px){
     .banner_img-container {
         width: 50% !important;
+    }
+    .nav_tabs li a {
+        padding: 8px 6px !important;
+        white-space: nowrap;
+    }
+    .owl-filter-bar a{
+        padding: 8px 22px;
+        margin: 0px 2px;
+    }
+    .mail_subscribe-input input {
+        height: 48px;
+    }
+    .mail_subscribe-input {
+        padding: 6px 6px 6px 6px;
+        flex-direction: column;
+    }
+    .wave_box {
+        height: 7em;
+        width: 7em;
+    }
+    .wave_box h3 {
+        font-size: 18px;
+        padding: 2px 22px;
+    }
+    .compliance_nav-tabs, .compliance_nav-tabs li a {
+        justify-content: space-between;
+    }
+    .compliance_nav-tabs li a {
+        padding: 2px 6px;
+    }
+    .chat-bubble{
+        margin: 30px 0px;
+    }
+    .chat-bubble p{
+        font-size: 12px;
     }
 }
 
