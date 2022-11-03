@@ -1828,7 +1828,13 @@
 
 //refresh page on browser resize
 // $(window).resize(function(){location.reload();});
-
+// media query 
+$( window ).resize( function() {
+  if ( window.matchMedia( '(min-width:600px)' ).matches ) {
+    $(window).resize(function(){location.reload();});
+  } 
+} );
+$( window ).resize();
     
     // career swiper scroll 
     new WOW().init();
