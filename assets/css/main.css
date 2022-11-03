@@ -1789,6 +1789,9 @@ color: #fff !important;
 .testimonial_section {
     padding: 8rem 0px;
 }
+.testimonial-title, .faq_section-title{
+    margin-bottom: 0;
+}
 
 #testimonialSlider .owl-stage-outer {
     background: rgba(119, 89, 243, 0.0705882353);
@@ -2030,7 +2033,7 @@ color: #fff !important;
 .contact_detail-section{
     background: #531b93;
     padding: 30px 10px;
-    margin: 30px auto;
+    margin: -40px auto 30px auto;
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
@@ -2056,7 +2059,7 @@ width: 33.33%;
     transition: all .5s;
 }
 .location_animate img{
-    width: 160px;
+    width: 120px;
     animation-name: float_up_down;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -2077,7 +2080,9 @@ width: 33.33%;
 .map_section, .contact_form-card {
     width: 50%;
 }
-
+.contact_form-card{
+    padding: 10px 10px 2rem 10px !important;
+}
 .map_section iframe {
     height: 100%;
     width: 100%;
@@ -2200,10 +2205,13 @@ width: 33.33%;
     color: #fff;
     font-size: 16px;
     font-weight: 200;
+    transition: all .5s;
 }
 
 .sitemap_link li a:hover {
     color: #bf96ef;
+    padding-left: 10px;
+    transition: all .5s;
 }
 
 .footer_apply {
@@ -3255,7 +3263,12 @@ width: 33.33%;
     transition: all .5s;
     border-radius: 14px 0px 0px 14px;
 }
-
+.fixed_faq-hide{
+    transform: translateX(50px);
+}
+.fixed_faq.r-w-0{
+    transform: translateX(0px);
+}
 .fixed_faq-header {
     background: var(--primary-color13);
     color: #fff;
@@ -4096,6 +4109,12 @@ background: var(--primary-color31);
     color: #fff !important;
     border-radius: 10px !important;
 }
+.testimonial-slider .owl-item{
+height: 0;
+}
+.testimonial-slider .owl-item.active{
+    height: auto;
+}
 .testimonial-btn{
     background: #531B93;
     text-decoration: none;
@@ -4642,6 +4661,9 @@ padding-top: 4rem;
 
 /* responsive  */
 @media screen and (max-width:768px) {
+    #header_section nav ul li:last-child a{
+
+    }
     .contact_detail-section {
         flex-direction: column;
     }
@@ -5612,6 +5634,9 @@ padding-top: 4rem;
 
 
 @media(max-width:420px){
+    .testimonial-title, .faq_section-title{
+        margin-bottom: 2rem;
+    }
     .banner_img-container {
         width: 50% !important;
     }
