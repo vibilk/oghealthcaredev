@@ -2,10 +2,6 @@
 //   location.reload();
 // });
 
-
-
-
-
 history.scrollRestoration = "manual";
 $(window).on('beforeunload', function(){
       $(window).scrollTop(0);
@@ -472,7 +468,7 @@ $(document).mouseup(function(e)
  var $post = $(".fixed_faq");
 setInterval(function(){
     $post.toggleClass("fixed_faq-hide");
-}, 10000);
+}, 20000);
 
 $(".fixed_faq, .help_tag").hover(function () {
   $(".fixed_faq").removeClass("fixed_faq-hide");
