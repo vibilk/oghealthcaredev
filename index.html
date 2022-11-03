@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta content="theme-color" content="#531B93" />
   <title>OG Healthcare</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/main.css">
@@ -453,8 +454,6 @@
 
   <!-- banner section start  -->
   <section class="banner_section p-0 position-relative">
-    <div class="shape-img10"><img src="assets/img/icons/circle.png" alt="image"></div>
-
     <div class="scroll_down">
       <div class="mouse">
         <span>SCROLL DOWN</span>
@@ -777,10 +776,10 @@
   <section class="new_testimonial-section">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6 m-auto text-center mb-5">
+        <div class="col-12 col-sm-6 m-auto text-center testimonial-title">
           <h4 class="section_title wow fadeInUp">DON’T TAKE OUR WORD
             FOR IT</h4>
-          <h1 class="section_title_content mb-5 wow fadeInUp" data-wow-delay=".2s">
+          <h1 class="section_title_content wow fadeInUp" data-wow-delay=".2s">
             TESTIMONIALS</h1>
         </div>
 
@@ -1038,7 +1037,7 @@
 <section class="faq_section py-5">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center mb-5 wow fadeInUp">
+      <div class="col-12 text-center faq_section-title wow fadeInUp">
         <h4 class="section_title">CONFUSED? DON'T BE, WE'VE BEEN DOING THIS FOR 22 YEARS</h4>
         <h1 class="section_title_content">Frequently Asked Questions</h1>
       </div>
@@ -1571,7 +1570,7 @@
           referrerpolicy="no-referrer-when-downgrade" id="googleMap"></iframe>
       </div>
 
-      <div class="contact_form-card px-4 py-2">
+      <div class="contact_form-card px-4">
         <div class="col-megamenu">
           <h6 class="title megamenu_inner_title px-3">We’d love to hear from you</h6>
           <div class="megamenu_form px-3 pb-3">
@@ -1647,13 +1646,13 @@
   <footer class="footer_section pb-0">
     <div class="container">
       <div class="row">
-        <div class="col wow fadeInUp" data-wow-delay=".3s">
+        <div class="col wow fadeIn" data-wow-delay=".3s">
           <div class="footer_logo">
             <img src="assets/img/og-logo.png" alt="footer logo">
             <h5 class="color-theme-sm">Augmented Human Intelligence</h5>
           </div>
         </div>
-        <div class="col wow fadeInUp" data-wow-delay=".4s">
+        <div class="col wow fadeIn" data-wow-delay=".4s">
           <h4 class="sitemap_title">Company</h4>
           <ul class="sitemap_link">
             <li><a href="">About</a> </li>
@@ -1665,14 +1664,14 @@
           </ul>
           <!-- <a href="" class="footer_apply">Apply Here</a> -->
         </div>
-        <div class="col wow fadeInUp" data-wow-delay=".5s">
+        <div class="col wow fadeIn" data-wow-delay=".5s">
           <h4 class="sitemap_title">Tools</h4>
           <ul class="sitemap_link">
             <li><a href="">ROI Calc</a> </li>
             <li><a href="">Training Calc</a> </li>
           </ul>
         </div>
-        <div class="col wow fadeInUp" data-wow-delay=".6s">
+        <div class="col wow fadeIn" data-wow-delay=".6s">
           <h4 class="sitemap_title">Useful links</h4>
           <ul class="sitemap_link">
             <li><a href="">Careers</a> </li>
@@ -1680,7 +1679,7 @@
             <li><a href="">Library</a> </li>
           </ul>
         </div>
-        <div class="col wow fadeInUp" data-wow-delay=".7s">
+        <div class="col wow fadeIn" data-wow-delay=".7s">
           <h4 class="sitemap_title">Legal</h4>
           <ul class="sitemap_link">
             <li><a href="">Privacy Policy</a> </li>
@@ -1825,6 +1824,18 @@
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/switchmode.js"></script>
   <script>
+
+//refresh page on browser resize
+$(window).bind('resize', function(e)
+{
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function()
+  {
+    this.location.reload(false); /* false to get page from cache */
+  }, 200);
+});
+
+    
     // career swiper scroll 
     new WOW().init();
 var slider1 = new Swiper('.slider', {
