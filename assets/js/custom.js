@@ -465,13 +465,13 @@ $(document).mouseup(function(e)
     }
 });
 
- var $post = $(".fixed_faq");
+ var $post = $(".help_tag");
 setInterval(function(){
     $post.toggleClass("fixed_faq-hide");
 }, 20000);
 
 $(".fixed_faq, .help_tag").hover(function () {
-  $(".fixed_faq").removeClass("fixed_faq-hide");
+  $(".help_tag").removeClass("fixed_faq-hide");
 });
 
 
