@@ -1,4 +1,10 @@
-// $(window).resize(function(){location.reload();});
+// $(window).on('resize',function(){
+//   location.reload();
+// });
+
+
+
+
 
 history.scrollRestoration = "manual";
 $(window).on('beforeunload', function(){
@@ -462,6 +468,28 @@ $(document).mouseup(function(e)
       $(".fixed_faq").removeClass('r-w-0');
     }
 });
+
+ var $post = $(".fixed_faq");
+setInterval(function(){
+    $post.toggleClass("fixed_faq-hide");
+}, 10000);
+
+$(".fixed_faq, .help_tag").hover(function () {
+  $(".fixed_faq").removeClass("fixed_faq-hide");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 $(".dark").on('click', function (e) {
