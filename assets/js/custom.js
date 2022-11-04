@@ -548,7 +548,7 @@ $(document).ready(function () {
     function () {
       $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeOut(100);
       $(this).toggleClass('open');
-      $(".megamenu").removeClass("fade_animate")
+      $(".megamenu").removeClass("fade_animate");
     }
   );
 });
@@ -613,7 +613,8 @@ $(document).ready(function(){
 $( window ).resize( function() {
   if ( window.matchMedia( '(max-width:1199px)' ).matches ) {
     // $(".has-megamenu").removeClass('dropdown_hover');
-    
+    $('.dropdown-toggle-arrow').attr('data-bs-toggle', 'dropdown');
+    // $('.dropdown ').removeClass("dropdown_hover");
   } 
   // else if ( window.matchMedia( '(max-width:1200px)'.matches ) ) {
    
